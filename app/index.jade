@@ -1,4 +1,25 @@
 extends layouts/default
 
 block content
-  h1  Index Page
+  // search modal
+  #search_modal.modal(tabindex='-1', role='dialog', aria-labelledby='search_modal')
+    .widget.widget_search
+      form.searchform.form-inline(method='get', action='/')
+        .form-group
+          input#modal-search-input.form-control(type='text', value='', name='search', placeholder='Search keyword')
+        button.theme_button(type='submit') Search
+  // wrappers for visual page editor and boxed version of template
+  #canvas
+    #box_wrapper
+      // template sections
+      include includes/pages/slider
+      include includes/pages/navigation
+      include includes/pages/services
+      include includes/pages/mainGalery
+      include includes/pages/contact
+      include includes/pages/callus
+      include includes/pages/copyright
+    // eof #box_wrapper
+  // eof #canvas
+  .preloader
+    .preloader_image

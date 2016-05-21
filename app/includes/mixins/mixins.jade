@@ -1,0 +1,9 @@
+mixin product(imgSrc, title, text, linkText)
+  .product
+    .product__media
+      img(src=imgSrc)
+    .product__content
+      h3.content__title=title
+      p.content__text=text
+      .content__button
+        a(href='#')=linkText
