@@ -1,0 +1,39 @@
+/*blog*/
+
+article iframe {
+  margin-bottom: -8px;
+}
+
+h1.entry-title {
+  font-size: 42px;
+  margin: 0 0 5px;
+}
+
+@media (max-width: 991px) {
+  h1.entry-title {
+    font-size: 32px;
+  }
+}
+
+article.post + article.post {
+  margin-top: 30px;
+}
+
+.isotope-item article.post {
+  margin: 0 0 30px !important;
+}
+
+.post {
+  &.vertical-item .item-content {
+    padding: 26px 38px 36px;
+  }
+  .side-item .item-content {
+    padding: 36px 38px 36px 10px;
+  }
+}
+
+@media (max-width: 991px) {
+  .post .side-item .item-content {
+    padding-left: 38px;
+  }
+}

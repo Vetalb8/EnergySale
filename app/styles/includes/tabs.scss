@@ -1,0 +1,76 @@
+/*tabs*/
+
+.tab-content {
+  border-radius: 0 0 0 0;
+  padding: 30px 30px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  &.no-border {
+    padding: 36px 0 0;
+    border: none;
+    background-color: transparent !important;
+  }
+  &.top-color-border {
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      top: -1px;
+      height: 6px;
+      background-color: #f5bb2c;
+    }
+  }
+  .featured-tab-image {
+    margin: -30px -31px 24px -31px;
+  }
+}
+
+.nav-tabs {
+  > li {
+    &.active {
+      > a {
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        &:hover, &:focus {
+          border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+      }
+      > a {
+        border-color: transparent;
+        background-color: #f5bb2c;
+        color: #ffffff;
+        &:hover, &:focus {
+          border-color: transparent;
+          background-color: #f5bb2c;
+          color: #ffffff;
+        }
+      }
+    }
+    > a {
+      font-size: 14px;
+      padding: 19px 40px;
+      margin-right: 1px;
+      margin-top: 0px;
+      border: none;
+      border: 1px solid #323232;
+      background-color: #323232;
+      color: #ffffff;
+      border-radius: 0;
+    }
+    > a {
+      &:hover, &:focus {
+        border-color: #323232;
+        background-color: #323232;
+        color: #f5bb2c;
+      }
+    }
+  }
+  border-bottom-color: transparent;
+  margin-top: 0px;
+  margin-bottom: -1px;
+  &.nav-justified > .active > a {
+    border-color: #323232;
+    background-color: #323232;
+    color: #f5bb2c;
+  }
+}

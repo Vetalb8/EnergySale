@@ -1,0 +1,78 @@
+/*
+**boxed layout
+*/
+
+body.boxed {
+  position: static;
+  width: auto;
+  height: auto;
+}
+
+.pattern1 {
+  background-image: url(../images/img/pattern1.png);
+}
+
+.pattern2 {
+  background-image: url(../images/img/pattern2.png);
+}
+
+.pattern3 {
+  background-image: url(../images/img/pattern3.png);
+}
+
+.pattern4 {
+  background-image: url(../images/img/pattern4.png);
+}
+
+.pattern5 {
+  background-image: url(../images/img/pattern5.png);
+}
+
+.pattern6 {
+  background-image: url(../images/img/pattern6.png);
+}
+
+.pattern7 {
+  background-image: url(../images/img/pattern7.png);
+}
+
+.pattern8 {
+  background-image: url(../images/img/pattern8.png);
+}
+
+.pattern9 {
+  background-image: url(../images/img/pattern9.png);
+}
+
+.pattern10 {
+  background-image: url(../images/img/pattern10.png);
+}
+
+.pattern11 {
+  background-image: url(../images/img/pattern11.png);
+}
+
+.boxed {
+  .container {
+    max-width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  #box_wrapper.container {
+    padding: 0;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 59px;
+    &.top-bottom-margins {
+      margin-top: 80px;
+      margin-bottom: 80px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .boxed .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

@@ -1,0 +1,256 @@
+/* sort panel */
+
+.storefront-sorting {
+  line-height: 1;
+  padding: 35px 35px 20px;
+  .form-group {
+    margin-bottom: 15px;
+  }
+  label {
+    padding-right: 10px;
+  }
+}
+
+#toggle_shop_view {
+  margin-left: 14px;
+  &:before, &:after {
+    font-family: 'FontAwesome';
+    display: inline-block;
+    background-color: #323232;
+    color: #ffffff;
+    padding: 12px 12px 13px;
+    font-size: 14px;
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    -o-transition: all 0.2s ease-in-out 0s;
+    -ms-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
+  }
+  &:before {
+    content: "\f00a";
+    margin-right: 5px;
+  }
+  &:after {
+    content: "\f03a";
+    background-color: #f5bb2c;
+  }
+  &.grid-view {
+    &:before {
+      background-color: #f5bb2c;
+    }
+    &:after {
+      background-color: #323232;
+    }
+  }
+}
+
+#sort_view {
+  color: #323232;
+  display: inline-block;
+  padding: 12px 11px 13px;
+  font-size: 14px;
+  background-color: #ffffff;
+}
+
+.columns-1 .product {
+  width: 100%;
+  margin-right: 0;
+  float: none;
+}
+
+@media (min-width: 992px) {
+  .columns-2 .product {
+    width: 50%;
+    float: left;
+  }
+  .columns-3 .product {
+    width: 33.33333333%;
+    float: left;
+  }
+  .columns-4 .product {
+    width: 25%;
+    float: left;
+  }
+}
+
+.products {
+  margin-left: -15px;
+  margin-right: -15px;
+  &:before, &:after {
+    content: '';
+    clear: both;
+    display: block;
+  }
+}
+
+.product {
+  margin-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.owl-item .product {
+  padding: 0;
+}
+
+.product {
+  .row {
+    position: relative;
+  }
+  [class*="col-"] {
+    position: static;
+    &.images a {
+      display: block;
+      position: relative;
+    }
+  }
+  h3 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 18px 0 24px;
+    position: relative;
+    letter-spacing: 0;
+  }
+  .theme_button {
+    margin: 4px 0 11px;
+    padding-right: 25px;
+    padding-left: 25px;
+    min-width: auto;
+  }
+  [class*="col-"]:first-child a span {
+    position: absolute;
+    background-color: #e23751;
+    color: #ffffff;
+    padding: 8px 18px;
+    text-transform: uppercase;
+    top: 20px;
+    right: 20px;
+    &.onsale {
+      background-color: #f5bb2c;
+      left: 20px;
+      bottom: 20px;
+      right: auto;
+      top: auto;
+    }
+  }
+}
+
+.star-rating {
+  overflow: hidden;
+  position: relative;
+  height: 1em;
+  line-height: 1em;
+  font-size: 12px;
+  width: 5.5em;
+  font-family: "rt-icons-2";
+  margin-bottom: 4px;
+  &:before {
+    content: "\e7aa\e7aa\e7aa\e7aa\e7aa";
+    float: left;
+    top: 0;
+    left: 0;
+    position: absolute;
+    letter-spacing: 0.1em;
+    letter-spacing: 0\9;
+    color: #e5e5e5;
+  }
+  span {
+    &:before {
+      content: "\e7aa\e7aa\e7aa\e7aa\e7aa";
+      float: left;
+      top: 0;
+      left: 0;
+      position: absolute;
+      letter-spacing: 0.1em;
+      letter-spacing: 0\9;
+      color: #e5e5e5;
+      color: #f5bb2c;
+    }
+    overflow: hidden;
+    float: left;
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding-top: 1.5em;
+  }
+}
+
+.price {
+  position: absolute;
+  left: 35px;
+  top: 20px;
+  color: #323232;
+  background-color: #ffffff;
+  padding: 8px 18px;
+  del {
+    opacity: 0.5;
+    font-size: 12px;
+  }
+  ins {
+    text-decoration: none;
+  }
+}
+
+.product-buttons {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  a {
+    float: left;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    text-align: center;
+    i {
+      line-height: 40px;
+    }
+    &.favorite_button {
+      background-color: #ffffff;
+      color: #323232;
+    }
+    &.add_to_cart_button {
+      color: #ffffff;
+      background-color: #f5bb2c;
+    }
+    &:hover {
+      background-color: #323232;
+      color: #ffffff;
+    }
+  }
+}
+
+.grid-view {
+  text-align: center;
+  .row {
+    position: relative;
+  }
+  .product [class*="col-"]:last-child {
+    padding: 20px 35px 20px 35px;
+    margin-top: 0 !important;
+    position: absolute;
+    top: 0;
+  }
+  .item-content h4, .star-rating, .product-description {
+    display: none;
+  }
+  [class*="col-"] {
+    width: 100%;
+    float: none;
+  }
+}
+
+.list-view .product {
+  float: none;
+  width: 100%;
+  [class*="col-"]:last-child {
+    padding: 10px 20px 10px 25px;
+    margin-top: 0 !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .list-view .product [class*="col-"]:last-child {
+    padding: 0 15px 20px;
+  }
+}

@@ -1,0 +1,112 @@
+/**color section*/
+
+.cs {
+  &.main_color2 {
+    background-color: #e23751;
+    .highlight {
+      color: #f5bb2c;
+    }
+  }
+  background-color: #f5bb2c;
+  color: #ffffff;
+  h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    color: #ffffff;
+  }
+  h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  a {
+    color: #ffffff;
+    &:hover {
+      color: #fceabe;
+    }
+  }
+  blockquote, .blockquote {
+    border-color: #f7cb5d;
+  }
+  .theme_button {
+    &.color1 {
+      background-color: #ffffff;
+      border-color: #ffffff;
+      color: #323232;
+      &:hover {
+        color: rgba(50, 50, 50, 0.7);
+      }
+      i {
+        color: #323232;
+      }
+    }
+    &:hover, &:focus {
+      color: rgba(255, 255, 255, 0.5);
+    }
+    i {
+      color: #ffffff;
+    }
+    &.inverse {
+      background-color: transparent;
+      border-color: #ffffff;
+      color: #ffffff;
+      &:hover, &:focus {
+        color: rgba(255, 255, 255, 0.5);
+      }
+    }
+  }
+}
+
+section .cs .theme_button {
+  color: #323232;
+  background-color: #ffffff;
+  border-color: #ffffff;
+  &:hover {
+    background-color: #323232;
+    border-color: #323232;
+    color: #ffffff;
+  }
+}
+
+.cs {
+  .with_background {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  .with_border {
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+  &.with_top_border .container:before, &.with_bottom_border .container:after, .section_header:before {
+    background-color: #f7cb5d;
+  }
+  .greylinks a {
+    color: #ffffff;
+    opacity: 0.7;
+    &:hover {
+      opacity: 1;
+      color: #ffffff !important;
+    }
+  }
+  .black {
+    border-color: #ffffff;
+    color: #ffffff;
+  }
+  .grey {
+    border-color: #323232;
+    color: #323232;
+  }
+  .response, .highlight {
+    color: #ffffff;
+  }
+  ul.list1 li {
+    border-color: rgba(255, 255, 255, 0.1) !important;
+  }
+  [class*='soc-'] {
+    color: #ffffff;
+    border-color: #ffffff;
+  }
+  .color-icon.bg-icon {
+    background-color: #ffffff;
+    &:hover {
+      color: #ffffff !important;
+    }
+  }
+  .widget_recent_entries li + li, .widget_recent_comments li + li, .widget_archive li + li, .widget_categories li + li, .widget_meta li + li, .widget_popular_entries li + li, .widget_nav_menu li + li, .widget_pages li + li {
+    border-top-color: rgba(255, 255, 255, 0.1);
+  }
+}

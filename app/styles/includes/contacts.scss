@@ -1,0 +1,65 @@
+/*contacts*/
+
+.contact-form {
+  position: relative;
+  z-index: 3;
+  textarea {
+    max-height: 140px;
+  }
+  &.parallax {
+    padding: 50px 50px 35px;
+    background-image: url(../images/parallax/progress.jpg);
+  }
+}
+
+.contact-form-respond {
+  display: block;
+  font-weight: 800;
+  &:before {
+    font-family: 'rt-icons-2';
+    content: "\e71a";
+    padding-right: 10px;
+  }
+}
+
+.contact-form p {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.contact-form-submit .theme_button {
+  margin-right: 6px;
+}
+
+.contact-form.transparent-background .form-control {
+  background-color: transparent;
+}
+
+.contact-email {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+  .contact-email {
+    font-size: 20px;
+    margin-bottom: 6px;
+  }
+  .contact-form.parallax {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+  }
+}
+
+.border-paragraphs {
+  margin: 25px 0 25px;
+  p {
+    padding: 9px 0 10px;
+    margin: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    &:first-child {
+      border-top: 1px solid rgba(0, 0, 0, 0.05);
+    }
+  }
+}

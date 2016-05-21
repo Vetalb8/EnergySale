@@ -1,0 +1,124 @@
+/*widget_calendar*/
+
+#calendar_wrap {
+  width: 100%;
+  margin-bottom: 0;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  #calendar_wrap {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+}
+
+.widget_calendar {
+  table {
+    width: 100%;
+    position: relative;
+    text-align: center;
+  }
+  caption {
+    line-height: 1;
+    font-size: 24px;
+    padding: 18px 0 18px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #f5bb2c;
+  }
+  thead {
+    background-color: #323232;
+    border: 1px solid #323232;
+    border-width: 7px 1px 7px 1px;
+    color: #ffffff;
+    th {
+      font-weight: 300;
+      &:first-child {
+        padding-left: 30px;
+      }
+      &:last-child {
+        padding-right: 30px;
+      }
+    }
+  }
+  tbody {
+    font-weight: 300;
+    tr {
+      &:first-child td {
+        padding-top: 29px;
+      }
+      &:last-child td {
+        padding-bottom: 30px;
+      }
+    }
+    td {
+      border: none;
+      padding: 3px 4px;
+      position: relative;
+      &:first-child {
+        padding-left: 30px;
+      }
+      &:last-child {
+        padding-right: 30px;
+      }
+      a {
+        font-weight: 700;
+        color: #f5bb2c;
+        &:hover {
+          color: #e23751;
+        }
+      }
+    }
+  }
+  th {
+    text-align: center;
+  }
+  tfoot {
+    position: absolute;
+    top: -3px;
+    right: 0;
+    left: 0;
+    td {
+      position: absolute;
+      top: 0;
+      a {
+        color: #ffffff;
+        text-align: center;
+        font-size: 0;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        display: inline-block;
+        &:hover {
+          color: #ffffff;
+          background-color: #f5bb2c;
+          border-color: #f5bb2c;
+        }
+      }
+    }
+    #prev {
+      left: 0;
+      a {
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+        &:before {
+          font-size: 14px;
+          font-family: 'rt-icons-2';
+          content: '\e7c4';
+        }
+      }
+    }
+    #next {
+      right: 0;
+      a {
+        border-left: 1px solid rgba(255, 255, 255, 0.2);
+        &:after {
+          font-size: 14px;
+          font-family: 'rt-icons-2';
+          content: '\e7c5';
+        }
+      }
+    }
+  }
+}

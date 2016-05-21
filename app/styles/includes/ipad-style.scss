@@ -1,0 +1,303 @@
+/*
+**main menu (min 992px) styles
+*/
+@media (min-width: 992px) {
+  /* menu layout */
+  .sf-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    li {
+      position: relative;
+    }
+    ul {
+      position: absolute;
+      display: none;
+      top: 100%;
+      z-index: 99;
+    }
+    li {
+      &:hover > ul, &.sfHover > ul {
+        display: block;
+      }
+    }
+    a {
+      display: block;
+      position: relative;
+    }
+    ul ul {
+      top: -20px;
+      left: 100%;
+    }
+    a {
+      padding: .4em 1.1em;
+      text-decoration: none;
+      zoom: 1;
+      /* IE7 */
+      -webkit-transition-property: color, background-color, border-color;
+      -moz-transition-property: color, background-color, border-color;
+      -ms-transition-property: color, background-color, border-color;
+      -o-transition-property: color, background-color, border-color;
+      transition-property: color, background-color, border-color;
+    }
+    li {
+      white-space: nowrap;
+      /* no need for Supersubs plugin */
+      *white-space: normal;
+      /* ...unless you support IE7 (let it wrap) */
+      -webkit-transition: background .2s;
+      transition: background .2s;
+    }
+    > li {
+      display: inline-block;
+      position: relative;
+      > a {
+        padding-top: 27px;
+        padding-bottom: 28px;
+        &:hover {
+          color: #f5bb2c;
+        }
+      }
+      &.active > a {
+        color: #f5bb2c;
+      }
+    }
+  }
+  /* menu skin */
+  .bordered_items .sf-menu {
+    text-align: center;
+    > li {
+      padding: 0;
+      + li:before {
+        content: '';
+        width: 1px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+    }
+  }
+  .header_white .sf-menu > li {
+    > a {
+      color: #323232;
+      &:hover {
+        color: #f5bb2c;
+      }
+    }
+    &.active > a {
+      color: #f5bb2c;
+    }
+    + li:before {
+      background-color: #e1e1e1;
+    }
+  }
+  .header_darkgrey .sf-menu > li {
+    > a {
+      color: #ffffff;
+      &:hover {
+        color: #f5bb2c;
+      }
+    }
+    &.active > a {
+      color: #f5bb2c;
+    }
+  }
+  .header_gradient .sf-menu > li {
+    > a {
+      color: #ffffff;
+      &:hover {
+        color: #323232;
+      }
+    }
+    &.active > a {
+      color: #323232;
+    }
+  }
+  .sf-menu {
+    li {
+      &:hover, &.sfHover {
+        /* only transition out, not in */
+        -webkit-transition: none;
+        transition: none;
+      }
+    }
+    ul {
+      margin-top: 1px;
+      text-align: left;
+      list-style: none;
+      padding: 20px 0;
+      background-color: #ffffff;
+      box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+      min-width: 12em;
+      /* allow long menu items to determine submenu width */
+      *width: 12em;
+      /* no auto sub width for IE7, see white-space comment below */
+      a {
+        color: #323232;
+        padding-left: 30px;
+        padding-right: 30px;
+        &:hover {
+          color: #f5bb2c;
+        }
+      }
+      li.active a {
+        color: #f5bb2c;
+      }
+      ul {
+        margin-top: 0;
+        margin-left: 1px;
+      }
+    }
+  }
+  /* second level */
+  /* third level */
+  .affix-top .sf-menu > li > a [class*='icon'] {
+    display: block;
+    font-size: 1.9em;
+    line-height: 1em;
+    padding: 0;
+    top: 0;
+    text-align: center;
+  }
+  /*** arrows (for all except IE7) **/
+  /* styling for both css and generated arrows */
+  .sf-arrows {
+    .sf-with-ul:after {
+      font-family: 'fontello';
+      content: '\e82e';
+      padding-left: 7px;
+    }
+    ul .sf-with-ul:after {
+      content: '\e830';
+    }
+  }
+  /*top menu level*/
+  /* styling for right-facing arrows */
+}
+
+/* common paddings */
+@media (min-width: 992px) {
+  .sf-menu > li > a {
+    padding-left: 2px;
+    padding-right: 0px;
+  }
+  .bordered_items .sf-menu > li > a {
+    padding-right: 40px;
+    padding-left: 44px;
+  }
+}
+
+/* -md- paddings */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .sf-menu > li > a {
+    padding-left: 9px;
+    padding-right: 8px;
+  }
+  .bordered_items .sf-menu > li > a {
+    padding-right: 20px;
+    padding-left: 24px;
+  }
+}
+
+/* -lg- paddings */
+@media (min-width: 1200px) {
+  .sf-menu > li > a {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+  .boxed .col-md-6 .sf-menu > li > a {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .sf-menu > li > a {
+    padding-left: 19px;
+    padding-right: 13px;
+  }
+}
+
+.toggle_menu {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -30px;
+  display: none;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  z-index: 1001;
+  visibility: visible;
+}
+
+.header_white .toggle_menu span {
+  background-color: #323232;
+  &:before, &:after {
+    background-color: #323232;
+  }
+}
+
+.page_toplogo .toggle_menu {
+  position: fixed;
+  top: 0;
+  left: auto;
+  right: 0;
+  background-color: #323232;
+  margin: 0;
+}
+
+.toggle_menu {
+  &:hover span {
+    &:before {
+      top: -7px;
+    }
+    &:after {
+      top: 7px;
+    }
+  }
+  span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    position: absolute;
+    background-color: #ffffff;
+    content: '';
+    left: 0;
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    -o-transition: all 0.2s ease-in-out 0s;
+    -ms-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
+    &:before, &:after {
+      display: block;
+      width: 24px;
+      height: 2px;
+      position: absolute;
+      background-color: #ffffff;
+      content: '';
+      left: 0;
+      -webkit-transition: all 0.2s ease-in-out 0s;
+      -moz-transition: all 0.2s ease-in-out 0s;
+      -o-transition: all 0.2s ease-in-out 0s;
+      -ms-transition: all 0.2s ease-in-out 0s;
+      transition: all 0.2s ease-in-out 0s;
+    }
+    left: 18px;
+    top: 50%;
+    margin-top: -1px;
+    &:before {
+      top: -6px;
+    }
+    &:after {
+      top: 6px;
+    }
+  }
+}

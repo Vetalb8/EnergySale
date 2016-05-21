@@ -1,0 +1,29 @@
+/* page meta blog */
+
+.page-meta {
+  padding: 9px 40px 30px;
+  h5 {
+    font-size: 14px;
+    font-weight: 300;
+  }
+  i {
+    line-height: 0.6;
+    padding-right: 8px;
+  }
+  .media {
+    position: relative;
+    padding: 28px 0 0;
+    margin-bottom: 20px;
+    + .media:before {
+      content: '';
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      top: 0;
+      background-color: rgba(150, 150, 150, 0.1);
+    }
+  }
+  .media-left {
+    padding-right: 8px;
+  }
+}

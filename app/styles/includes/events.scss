@@ -1,0 +1,19 @@
+/* events */
+
+.event-item .item-content {
+  padding: 30px 40px 10px 10px;
+  i {
+    padding-right: 5px;
+  }
+}
+
+@media (max-width: 991px) {
+  .event-item .item-content {
+    padding-top: 10px;
+    padding-left: 40px;
+  }
+}
+
+.event-single.muted_background .item-content {
+  padding: 0 40px 50px;
+}

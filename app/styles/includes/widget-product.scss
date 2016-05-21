@@ -1,0 +1,34 @@
+/* widget_products */
+
+.widget_products {
+  img {
+    max-width: 80px;
+  }
+  .media h3 {
+    font-size: inherit;
+    line-height: 1.4;
+    margin: 3px 0 10px;
+  }
+  .star-rating {
+    margin-bottom: 10px;
+  }
+  .price {
+    position: static;
+    background-color: transparent;
+    padding: 0;
+  }
+  .add_to_cart_button {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+    text-align: center;
+    background-color: #f5bb2c;
+    color: #ffffff;
+    margin-right: 5px;
+    &:hover {
+      color: #ffffff;
+      background-color: #323232;
+    }
+  }
+}

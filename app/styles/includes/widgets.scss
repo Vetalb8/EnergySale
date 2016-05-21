@@ -1,0 +1,15 @@
+/*
+**widgets
+*/
+
+aside {
+  > div + div {
+    margin-top: 10px;
+    > .widget-title {
+      margin-top: 26px;
+    }
+  }
+  .widget + .widget {
+    margin-top: 10px;
+  }
+}

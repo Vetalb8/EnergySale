@@ -1,0 +1,35 @@
+/**grey section - light section, muted section - .ls.ms*/
+
+.ls.ms {
+  background-color: #f2f2f2;
+  .greylinks a:hover {
+    color: #323232;
+  }
+  .with_background, hr {
+    background-color: #ffffff;
+  }
+  .form-control {
+    border-color: transparent;
+    background-color: #ffffff;
+  }
+  .panel-title > a {
+    background-color: #ffffff;
+    &.collapsed:hover, &:hover {
+      background-color: rgba(50, 50, 50, 0.05);
+    }
+  }
+  .pagination > li > {
+    a, span {
+      background-color: #ffffff;
+    }
+  }
+  .breadcrumb {
+    color: #9a9a9a;
+    a {
+      color: #818181;
+      &:hover {
+        color: #f5bb2c;
+      }
+    }
+  }
+}

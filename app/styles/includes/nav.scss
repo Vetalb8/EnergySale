@@ -1,0 +1,8 @@
+/*nav*/
+
+.nav > li > a {
+  color: #323232;
+  &:hover, &:focus {
+    background-color: inherit;
+  }
+}

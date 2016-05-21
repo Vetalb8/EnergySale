@@ -1,0 +1,67 @@
+/* vertical alignmetn in columns */
+
+.table_section {
+  [class*="container"] {
+    height: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .row {
+    display: table;
+    min-width: 100%;
+    height: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  [class*="col-"] {
+    display: table-cell;
+    vertical-align: middle;
+    float: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .table_section {
+    .row, [class*="col-"] {
+      display: block;
+      width: auto;
+    }
+  }
+  [class*="col-xs"] + [class*="col-xs"] {
+    margin-top: 0 !important;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .table_section.table_section_md {
+    .row, [class*="col-"] {
+      display: block;
+      width: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .table_section.table_section_lg {
+    .row, [class*="col-"] {
+      display: block;
+      width: auto;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* overlap featured person */
+  .top-overlap {
+    margin-top: -170px;
+  }
+  .top-overlap-small {
+    margin-top: -100px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 500px;
+  }
+}

@@ -1,0 +1,20 @@
+/*about*/
+@media (min-width: 500px) {
+  .about-content {
+    padding: 30px 40px 40px 10px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 991px) {
+  .about-content {
+    padding-top: 1px;
+    padding-left: 40px;
+  }
+}
+
+@media (min-width: 500px) {
+  .about-content h2 {
+    margin: 24px 0 18px;
+    font-size: 40px;
+  }
+}

@@ -1,0 +1,33 @@
+/*icons for forms */
+form {
+  label {
+    + {
+      [class*="icon2-"] {
+        position: absolute;
+        font-size: 24px;
+        color: #9a9a9a;
+        left: 10px;
+        top: 19px;
+        + {
+          .form-control {
+            padding-left: 50px;
+          }
+        }
+      }
+    }
+  }
+}
+label {
+  font-weight: normal;
+}
+.form-control {
+  + {
+    [class*="icon2-"] {
+      position: absolute;
+      font-size: 24px;
+      left: 20px;
+      top: 50%;
+      color: #f5bb2c;
+    }
+  }
+}

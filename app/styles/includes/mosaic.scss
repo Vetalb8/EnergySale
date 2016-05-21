@@ -1,0 +1,90 @@
+/* mosaic */
+
+.mosaic-post {
+  p {
+    margin-bottom: 0;
+  }
+  .post-social-links {
+    margin: -1px;
+    padding: 18px 40px 17px;
+  }
+}
+
+h3.entry-title {
+  font-size: 28px;
+  margin: 10px 0 14px;
+  + .date {
+    display: inline-block;
+    text-transform: uppercase;
+    line-height: 1;
+    padding: 4px 14px;
+    margin-bottom: 22px;
+  }
+}
+
+h4.entry-title {
+  font-size: 42px;
+}
+
+.item-meta {
+  opacity: 0.8;
+  font-weight: 300;
+  + .entry-title {
+    margin-bottom: 25px;
+  }
+}
+
+.entry-tags {
+  margin-top: 30px;
+  .theme_button {
+    margin-right: 6px;
+  }
+  span + span {
+    margin-left: 14px;
+  }
+  i {
+    font-size: 14px;
+    margin-right: 5px;
+  }
+}
+
+.entry-meta {
+  &:before, &:after {
+    display: block;
+    clear: both;
+    content: '';
+    width: 0;
+    height: 0;
+  }
+}
+
+.comment-meta {
+  &:before, &:after {
+    display: block;
+    clear: both;
+    content: '';
+    width: 0;
+    height: 0;
+  }
+}
+
+.post-adds {
+  &:before, &:after {
+    display: block;
+    clear: both;
+    content: '';
+    width: 0;
+    height: 0;
+  }
+}
+
+.entry-thumbnail {
+  text-align: center;
+  position: relative;
+  img {
+    background-color: #ffffff;
+  }
+  &[class*='col-'] {
+    margin-bottom: 0;
+  }
+}

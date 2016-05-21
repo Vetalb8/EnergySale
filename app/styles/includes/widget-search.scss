@@ -1,0 +1,68 @@
+/*
+widget_search,
+widget_mailchimp
+*/
+
+.widget_mailchimp {
+  overflow: hidden;
+  p {
+    padding-top: 10px;
+  }
+}
+
+.widget_search .form-inline, .widget_mailchimp .form-inline {
+  position: relative;
+}
+
+.widget_search .form-inline .form-group, .widget_mailchimp .form-inline .form-group {
+  display: block;
+  vertical-align: top;
+  position: relative;
+}
+
+.widget_search .form-inline input[type="text"], .widget_mailchimp .form-inline input[type="email"] {
+  padding-right: 50px;
+  display: block;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .widget_search .form-group.inline-block, .widget_mailchimp .form-group.inline-block {
+    min-width: 370px;
+    margin-right: 5px;
+  }
+}
+
+.widget_search .form-inline .theme_button, .widget_mailchimp .form-inline .theme_button {
+  font-size: 0;
+  padding: 12px;
+  margin: 0;
+}
+
+.widget_search .form-inline .theme_button, .widget_mailchimp .form-inline .theme_button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: none !important;
+  background-color: #f5bb2c !important;
+  color: #ffffff !important;
+}
+
+.widget_search .form-inline .theme_button:before, .widget_mailchimp .form-inline .theme_button:before {
+  font-size: 16px;
+  content: "\e656";
+  font-family: 'rt-icons-2';
+}
+
+.widget_search .form-inline .theme_button:hover {
+  opacity: 0.5;
+}
+
+.widget_mailchimp .form-inline .theme_button {
+  &:hover {
+    opacity: 0.5;
+  }
+  &:before {
+    content: "\e65c";
+  }
+}

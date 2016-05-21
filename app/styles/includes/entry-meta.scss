@@ -1,0 +1,46 @@
+/* additional meta in corner of thumbnail */
+
+.entry-meta-corner {
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  color: #ffffff;
+  background-color: #f5bb2c;
+  a {
+    color: #ffffff;
+    &:hover {
+      color: #f5bb2c;
+    }
+  }
+  .date {
+    color: #323232;
+    display: block;
+    min-width: 60px;
+    padding: 0 3px;
+    text-transform: uppercase;
+    strong {
+      color: #ffffff;
+      display: block;
+      font-size: 42px;
+      font-weight: 100;
+      padding: 12px 0 0;
+    }
+  }
+  .comments-link {
+    line-height: 1;
+    display: block;
+    padding: 2px 5px;
+    background-color: #323232;
+    i {
+      position: relative;
+      top: 1px;
+    }
+  }
+}
+
+.categories-links {
+  padding-right: 17px;
+  a + a {
+    margin-left: 6px;
+  }
+}

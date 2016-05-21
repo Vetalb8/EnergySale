@@ -1,0 +1,10 @@
+/* highlight first letter in blog post */
+
+.entry-content p.big-first-letter:first-letter {
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 700;
+  color: #f5bb2c;
+  float: left;
+  margin-right: 10px;
+}

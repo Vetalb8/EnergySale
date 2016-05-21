@@ -1,0 +1,90 @@
+/*pagination*/
+.pagination {
+  margin-top: 0;
+  margin-bottom: 0;
+  >li {
+    display: inline-block;
+    >a {
+      text-align: center;
+      padding: 10px 0;
+      border: none;
+      color: #323232;
+      background-color: #f2f2f2;
+      margin-left: 6px;
+      margin-bottom: 10px;
+      min-width: 40px;
+      &:hover {
+        background-color: #f5bb2c !important;
+        color: #ffffff !important;
+      }
+      &:focus {
+        background-color: #f5bb2c !important;
+        color: #ffffff !important;
+      }
+    }
+    >span {
+      text-align: center;
+      padding: 10px 0;
+      border: none;
+      color: #323232;
+      background-color: #f2f2f2;
+      margin-left: 6px;
+      margin-bottom: 10px;
+      min-width: 40px;
+      &:hover {
+        background-color: #f5bb2c !important;
+        color: #ffffff !important;
+      }
+      &:focus {
+        background-color: #f5bb2c !important;
+        color: #ffffff !important;
+      }
+    }
+    &:first-child {
+      >a {
+        border-radius: 0px;
+        padding: 10px 26px;
+      }
+      >span {
+        border-radius: 0px;
+        padding: 10px 26px;
+      }
+    }
+    &:last-child {
+      >a {
+        border-radius: 0px;
+        padding: 10px 26px;
+      }
+      >span {
+        border-radius: 0px;
+        padding: 10px 26px;
+      }
+    }
+  }
+  >.active {
+    >a {
+      background-color: #f5bb2c !important;
+      color: #ffffff;
+      &:hover {
+        background-color: #f5bb2c !important;
+        color: #ffffff;
+      }
+      &:focus {
+        background-color: #f5bb2c !important;
+        color: #ffffff;
+      }
+    }
+    >span {
+      background-color: #f5bb2c !important;
+      color: #ffffff;
+      &:hover {
+        background-color: #f5bb2c !important;
+        color: #ffffff;
+      }
+      &:focus {
+        background-color: #f5bb2c !important;
+        color: #ffffff;
+      }
+    }
+  }
+}

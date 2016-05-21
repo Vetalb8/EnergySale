@@ -1,0 +1,146 @@
+/*price tables*/
+
+.price-table {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+  }
+  margin: 0;
+}
+
+/* price table with background */
+
+.bg_teaser {
+  .plan-name {
+    background-color: #fefefe;
+  }
+  .plan-price {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  &.color_bg_1 .plan-name h3 {
+    color: #f5bb2c;
+  }
+  &.color_bg_2 .plan-name h3 {
+    color: #16a4d6;
+  }
+  &.color_bg_3 .plan-name h3 {
+    color: #e23751;
+  }
+  .features-list li + li {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+
+.plan-name {
+  padding: 30px 0;
+  h3 {
+    font-size: 32px;
+    margin: 0;
+  }
+}
+
+.plan-price {
+  padding: 35px 0 25px;
+  position: relative;
+  /* dollar sign */
+  /* price */
+  /* per month */
+  span {
+    &:first-child {
+      font-size: 28px;
+      font-weight: 300;
+    }
+    + span {
+      font-size: 60px;
+      font-weight: 700;
+    }
+  }
+  p {
+    display: inline;
+    font-size: 28px;
+    font-weight: 300;
+  }
+}
+
+.features-list {
+  margin-top: 20px;
+  li {
+    margin: 10px 40px;
+    padding-top: 10px;
+  }
+  .enabled:before {
+    font-family: 'rt-icons-2';
+    font-size: 24px;
+    line-height: 1;
+    position: relative;
+    top: 5px;
+    right: 4px;
+    content: "\e116";
+    padding-right: 8px;
+    color: #323232;
+  }
+  .disabled:before {
+    font-family: 'rt-icons-2';
+    font-size: 24px;
+    line-height: 1;
+    position: relative;
+    top: 5px;
+    right: 4px;
+    content: "\e116";
+    padding-right: 8px;
+    color: #323232;
+    content: "\e117";
+  }
+}
+
+.call-to-action {
+  padding: 20px 40px 38px;
+}
+
+.price-table {
+  &.style1 {
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    .features-list li + li {
+      border-top: 1px solid rgba(0, 0, 0, 0.05);
+    }
+    .plan-price {
+      background-color: #f5bb2c;
+      color: #ffffff;
+      margin: 1px -1px;
+    }
+  }
+  &.style2 {
+    background-color: #f5f5f5;
+    .plan-name {
+      background-color: #f5bb2c;
+      padding: 30px 0;
+      h3 {
+        color: #ffffff;
+      }
+    }
+    .plan-price {
+      padding-bottom: 0;
+      color: #323232;
+    }
+    .enabled:before {
+      font-family: 'rt-icons-2';
+      content: "\e621";
+      padding-right: 13px;
+      color: #f5bb2c;
+    }
+    .disabled:before {
+      font-family: 'rt-icons-2';
+      content: "\e621";
+      padding-right: 13px;
+      color: #f5bb2c;
+      color: #323232;
+      content: "\e622";
+    }
+  }
+}

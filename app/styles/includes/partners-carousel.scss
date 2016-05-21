@@ -1,0 +1,21 @@
+/* partners carousel */
+
+.owl-carousel.partners-carousel {
+  margin-bottom: 0;
+}
+
+.light-partner-image a {
+  display: block;
+  background-color: #9a9a9a;
+  &:hover {
+    background-color: #f5bb2c;
+  }
+}
+
+.highlight-partner-image a {
+  display: block;
+  background-color: #f5bb2c;
+  &:hover {
+    background-color: #323232;
+  }
+}

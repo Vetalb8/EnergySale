@@ -1,0 +1,30 @@
+/* additional meta at the bottom of entry-title */
+
+.post-adds {
+  margin: 22px 0 33px;
+  span {
+    display: inline-block;
+    line-height: 40px;
+    padding: 0 20px;
+  }
+  .theme_button {
+    padding: 10px 6px;
+    min-width: 0;
+    margin-bottom: 0;
+    > [class*="rt-icon"] {
+      font-size: 18px;
+      top: 3px;
+    }
+    &.inverse {
+      border-color: transparent rgba(55, 52, 47, 0.1) transparent transparent;
+      border-width: 1px;
+      padding: 12px 8px;
+      > [class*="rt-icon"] {
+        color: #f5bb2c;
+      }
+    }
+    &:hover > [class*="rt-icon"] {
+      opacity: 0.7;
+    }
+  }
+}

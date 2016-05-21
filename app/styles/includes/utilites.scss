@@ -1,0 +1,157 @@
+/*
+**utilites
+*/
+
+.alignleft {
+  float: left;
+  margin: 5px 30px 15px 0;
+  max-width: 50%;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+.inline-block {
+  display: inline-block;
+  max-width: 100%;
+}
+
+.with_padding {
+  padding: 35px 35px;
+}
+
+.table_section_content {
+  padding: 30px 50px;
+  h3 {
+    font-size: 42px;
+    font-weight: 300;
+    margin: 0 0 32px;
+  }
+}
+
+.with_background {
+  background-color: #f5f5f5;
+}
+
+.muted_background {
+  background-color: rgba(50, 50, 50, 0.06);
+}
+
+.with_border {
+  border: 1px solid #e1e1e1;
+}
+
+.before_cover, .after_cover, .before_cover > *, .after_cover > * {
+  position: relative;
+  z-index: 2;
+}
+
+.before_cover:before, .after_cover:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.top-corner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 1;
+}
+
+.big {
+  font-size: 42px;
+  line-height: 0.9;
+}
+
+.response, .highlight {
+  color: #f5bb2c;
+  border-color: #f5bb2c;
+}
+
+.highlight2 {
+  color: #e23751;
+  border-color: #e23751;
+}
+
+.red, .required {
+  color: #fa5c5d;
+}
+
+.black {
+  color: #1a1a1a;
+  border-color: #1a1a1a;
+}
+
+.grey {
+  color: #323232;
+  border-color: #323232;
+}
+
+.greylinks a {
+  color: #9a9a9a;
+}
+
+.darklinks a {
+  color: #323232;
+}
+
+.thin {
+  font-weight: 300;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.quotesign {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 1;
+  &:before {
+    font-size: 150px;
+    font-family: 'PT Sans', sans-serif;
+    content: '‘‘';
+    position: absolute;
+    left: 0;
+    top: 0;
+    line-height: 1;
+  }
+}
+
+.light_bg_color {
+  background-color: #ffffff;
+}
+
+.main_bg_color {
+  color: #ffffff;
+  background-color: #f5bb2c;
+}
+
+.main_bg_color2 {
+  color: #ffffff;
+  background-color: #e23751;
+}
+
+.dark_bg_color {
+  color: #ffffff;
+  background-color: #1a1a1a;
+  h1, h2, h3, h4, h5, h6 {
+    color: #ffffff;
+  }
+}
+
+.darkgrey_bg_color {
+  color: #ffffff;
+  background-color: #323232;
+  h1, h2, h3, h4, h5, h6 {
+    color: #ffffff;
+  }
+}

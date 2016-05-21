@@ -1,0 +1,23 @@
+/*widget_twitter*/
+
+.tweet_avatar {
+  float: left;
+}
+
+.tweet_right {
+  overflow: hidden;
+  zoom: 1;
+  margin-left: 60px;
+}
+
+.tweet_list li + li {
+  margin-top: 10px;
+  clear: both;
+  .tweet_right {
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    padding-top: 10px;
+  }
+  .tweet_avatar {
+    padding-top: 10px;
+  }
+}

@@ -1,0 +1,46 @@
+/*vertical tabs*/
+
+.vertical-tabs {
+  .tab-content.no-border {
+    padding-top: 0;
+  }
+  .nav > li {
+    > a {
+      background-color: #323232;
+      color: #ffffff;
+      padding: 18px 60px 18px 40px;
+      margin-bottom: 10px;
+      position: relative;
+      i {
+        position: relative;
+        top: 1px;
+        padding-right: 12px;
+      }
+      &:after {
+        color: rgba(255, 255, 255, 0.8);
+        font-family: 'rt-icons-2';
+        content: "\e7c5";
+        position: absolute;
+        font-size: 12px;
+        line-height: 58px;
+        text-align: center;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 60px;
+        border-left: 1px solid rgba(255, 255, 255, 0.1);
+        letter-spacing: 0;
+      }
+    }
+    &.active a, > a:hover {
+      background-color: #f5bb2c;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .vertical-tabs .nav > li.active {
+    position: relative;
+    z-index: 2;
+  }
+}

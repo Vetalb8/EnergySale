@@ -1,0 +1,65 @@
+/*forms*/
+/* select styling */
+.form-control {
+  height: 40px;
+  border: none;
+  background-color: #ffffff;
+  border-radius: 0;
+  color: #1a1a1a;
+  padding-left: 20px;
+  padding-right: 40px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  font-size: 16px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  option {
+    color: #323232;
+    background-color: #ffffff;
+  }
+  &:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-color: #9a9a9a;
+    color: #9a9a9a;
+    &:-moz-placeholder {
+      font-style: italic;
+      color: transparent;
+      opacity: 1;
+    }
+    &::-moz-placeholder {
+      font-style: italic;
+      color: transparent;
+      opacity: 1;
+    }
+    &:-ms-input-placeholder {
+      font-style: italic;
+      color: transparent;
+    }
+    &::-webkit-input-placeholder {
+      font-style: italic;
+      color: transparent;
+    }
+  }
+  &:-moz-placeholder {
+    color: #9a9a9a;
+    opacity: 1;
+  }
+  &::-moz-placeholder {
+    font-style: italic;
+    color: #9a9a9a;
+    opacity: 1;
+  }
+  &:-ms-input-placeholder {
+    font-style: italic;
+    color: #9a9a9a;
+  }
+  &::-webkit-input-placeholder {
+    font-style: italic;
+    color: #9a9a9a;
+  }
+}
+.form-control.invalid {
+  -webkit-box-shadow: 0 0 0 2px #f5bb2c;
+  box-shadow: 0 0 0 2px #f5bb2c;
+}

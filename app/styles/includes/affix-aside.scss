@@ -1,0 +1,80 @@
+/* affix-aside */
+
+.affix-aside {
+  position: relative;
+  &.affix {
+    position: fixed;
+    top: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .affix-aside {
+    margin-top: 50px !important;
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+    width: inherit !important;
+    &.affix {
+      margin-top: 50px !important;
+      position: static !important;
+      top: auto !important;
+      left: auto !important;
+      width: inherit !important;
+    }
+  }
+}
+
+.module-header {
+  margin: 0 0 38px;
+  text-transform: capitalize;
+  font-size: 40px;
+}
+
+.page_footer .module-header {
+  font-size: 28px;
+}
+
+.widget label[for], .comment-form label[for], .contact-form label[for], .order-form label[for] {
+  display: none;
+}
+
+.widget > h3, .widget-title {
+  font-size: 28px;
+  margin: 0 0 28px;
+  position: relative;
+}
+
+.widget {
+  > ul {
+    margin-bottom: 0;
+  }
+  li {
+    position: relative;
+  }
+  .vertical-item {
+    h4 {
+      font-size: 20px;
+      margin: 17px 0 0;
+    }
+    + .vertical-item {
+      margin-top: 16px;
+    }
+  }
+}
+
+.page_footer {
+  .widget li {
+    border: none !important;
+  }
+  .widget-title {
+    font-size: 28px;
+    margin-bottom: 18px;
+  }
+}
+
+.widget_recent_entries ul, .widget_recent_comments ul, .widget_archive ul, .widget_categories ul, .widget_meta ul, .widget_nav_menu ul, .widget_pages ul, .widget_flickr ul, .widget_twitter ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

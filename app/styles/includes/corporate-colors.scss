@@ -1,0 +1,348 @@
+/*corporate colors*/
+
+a {
+  &.color-icon.soc-twitter, &[class*="soc-"].soc-twitter:hover {
+    color: #00abef;
+    border-color: #00abef;
+  }
+  &.color-icon.soc-facebook, &[class*="soc-"].soc-facebook:hover {
+    color: #507cbe;
+    border-color: #507cbe;
+  }
+  &.color-icon.soc-google, &[class*="soc-"].soc-google:hover {
+    color: #d93e2d;
+    border-color: #d93e2d;
+  }
+  &.color-icon.soc-pinterest, &[class*="soc-"].soc-pinterest:hover {
+    color: #c92619;
+    border-color: #c92619;
+  }
+  &.color-icon.soc-foursquare, &[class*="soc-"].soc-foursquare:hover {
+    color: #23b7e0;
+    border-color: #23b7e0;
+  }
+  &.color-icon.soc-yahoo, &[class*="soc-"].soc-yahoo:hover {
+    color: #6e2a85;
+    border-color: #6e2a85;
+  }
+  &.color-icon.soc-skype, &[class*="soc-"].soc-skype:hover {
+    color: #28abe3;
+    border-color: #28abe3;
+  }
+  &.color-icon.soc-yelp, &[class*="soc-"].soc-yelp:hover {
+    color: #c83218;
+    border-color: #c83218;
+  }
+  &.color-icon.soc-feedburner, &[class*="soc-"].soc-feedburner:hover {
+    color: #ffcc00;
+    border-color: #ffcc00;
+  }
+  &.color-icon.soc-linkedin, &[class*="soc-"].soc-linkedin:hover {
+    color: #3371b7;
+    border-color: #3371b7;
+  }
+  &.color-icon.soc-viadeo, &[class*="soc-"].soc-viadeo:hover {
+    color: #e4a000;
+    border-color: #e4a000;
+  }
+  &.color-icon.soc-xing, &[class*="soc-"].soc-xing:hover {
+    color: #005a60;
+    border-color: #005a60;
+  }
+  &.color-icon.soc-myspace, &[class*="soc-"].soc-myspace:hover {
+    color: #323232;
+    border-color: #323232;
+  }
+  &.color-icon.soc-soundcloud, &[class*="soc-"].soc-soundcloud:hover {
+    color: #fe3801;
+    border-color: #fe3801;
+  }
+  &.color-icon.soc-spotify, &[class*="soc-"].soc-spotify:hover {
+    color: #7bb342;
+    border-color: #7bb342;
+  }
+  &.color-icon.soc-grooveshark, &[class*="soc-"].soc-grooveshark:hover {
+    color: #f67e03;
+    border-color: #f67e03;
+  }
+  &.color-icon.soc-lastfm, &[class*="soc-"].soc-lastfm:hover {
+    color: #d41316;
+    border-color: #d41316;
+  }
+  &.color-icon.soc-youtube, &[class*="soc-"].soc-youtube:hover {
+    color: #d12121;
+    border-color: #d12121;
+  }
+  &.color-icon.soc-vimeo, &[class*="soc-"].soc-vimeo:hover {
+    color: #51b5e7;
+    border-color: #51b5e7;
+  }
+  &.color-icon.soc-dailymotion, &[class*="soc-"].soc-dailymotion:hover {
+    color: #004e72;
+    border-color: #004e72;
+  }
+  &.color-icon.soc-vine, &[class*="soc-"].soc-vine:hover {
+    color: #00b389;
+    border-color: #00b389;
+  }
+  &.color-icon.soc-flickr, &[class*="soc-"].soc-flickr:hover {
+    color: #0062dd;
+    border-color: #0062dd;
+  }
+  &.color-icon.soc-500px, &[class*="soc-"].soc-500px:hover {
+    color: #58a9de;
+    border-color: #58a9de;
+  }
+  &.color-icon.soc-instagram, &[class*="soc-"].soc-instagram:hover {
+    color: #9c7c6e;
+    border-color: #9c7c6e;
+  }
+  &.color-icon.soc-wordpress, &[class*="soc-"].soc-wordpress:hover {
+    color: #464646;
+    border-color: #464646;
+  }
+  &.color-icon.soc-tumblr, &[class*="soc-"].soc-tumblr:hover {
+    color: #45556c;
+    border-color: #45556c;
+  }
+  &.color-icon.soc-blogger, &[class*="soc-"].soc-blogger:hover {
+    color: #ec661c;
+    border-color: #ec661c;
+  }
+  &.color-icon.soc-technorati, &[class*="soc-"].soc-technorati:hover {
+    color: #5cb030;
+    border-color: #5cb030;
+  }
+  &.color-icon.soc-reddit, &[class*="soc-"].soc-reddit:hover {
+    color: #e74a1e;
+    border-color: #e74a1e;
+  }
+  &.color-icon.soc-dribbble, &[class*="soc-"].soc-dribbble:hover {
+    color: #e84d88;
+    border-color: #e84d88;
+  }
+  &.color-icon.soc-stumbleupon, &[class*="soc-"].soc-stumbleupon:hover {
+    color: #e64011;
+    border-color: #e64011;
+  }
+  &.color-icon.soc-digg, &[class*="soc-"].soc-digg:hover {
+    color: #1d1d1b;
+    border-color: #1d1d1b;
+  }
+  &.color-icon.soc-envato, &[class*="soc-"].soc-envato:hover {
+    color: #597c3a;
+    border-color: #597c3a;
+  }
+  &.color-icon.soc-behance, &[class*="soc-"].soc-behance:hover {
+    color: #007eff;
+    border-color: #007eff;
+  }
+  &.color-icon.soc-delicious, &[class*="soc-"].soc-delicious:hover {
+    color: #31a9ff;
+    border-color: #31a9ff;
+  }
+  &.color-icon.soc-deviantart, &[class*="soc-"].soc-deviantart:hover {
+    color: #c5d200;
+    border-color: #c5d200;
+  }
+  &.color-icon.soc-forrst, &[class*="soc-"].soc-forrst:hover {
+    color: #5b9a68;
+    border-color: #5b9a68;
+  }
+  &.color-icon.soc-play, &[class*="soc-"].soc-play:hover {
+    color: #5acdbd;
+    border-color: #5acdbd;
+  }
+  &.color-icon.soc-zerply, &[class*="soc-"].soc-zerply:hover {
+    color: #9dbc7a;
+    border-color: #9dbc7a;
+  }
+  &.color-icon.soc-wikipedia, &[class*="soc-"].soc-wikipedia:hover {
+    color: #000000;
+    border-color: #000000;
+  }
+  &.color-icon.soc-apple, &[class*="soc-"].soc-apple:hover {
+    color: #b9bfc1;
+    border-color: #b9bfc1;
+  }
+  &.color-icon.soc-flattr, &[class*="soc-"].soc-flattr:hover {
+    color: #f67c1a;
+    border-color: #f67c1a;
+  }
+  &.color-icon.soc-github, &[class*="soc-"].soc-github:hover {
+    color: #221e1b;
+    border-color: #221e1b;
+  }
+  &.color-icon.soc-chimein, &[class*="soc-"].soc-chimein:hover {
+    color: #888688;
+    border-color: #888688;
+  }
+  &.color-icon.soc-friendfeed, &[class*="soc-"].soc-friendfeed:hover {
+    color: #2f72c4;
+    border-color: #2f72c4;
+  }
+  &.color-icon.soc-newsvine, &[class*="soc-"].soc-newsvine:hover {
+    color: #075b2f;
+    border-color: #075b2f;
+  }
+  &.color-icon.soc-identica, &[class*="soc-"].soc-identica:hover {
+    color: #000000;
+    border-color: #000000;
+  }
+  &.color-icon.soc-bebo, &[class*="soc-"].soc-bebo:hover {
+    color: #ef1011;
+    border-color: #ef1011;
+  }
+  &.color-icon.soc-zynga, &[class*="soc-"].soc-zynga:hover {
+    color: #dc0606;
+    border-color: #dc0606;
+  }
+  &.color-icon.soc-steam, &[class*="soc-"].soc-steam:hover {
+    color: #8f8d8a;
+    border-color: #8f8d8a;
+  }
+  &.color-icon.soc-xbox, &[class*="soc-"].soc-xbox:hover {
+    color: #92c83e;
+    border-color: #92c83e;
+  }
+  &.color-icon.soc-windows, &[class*="soc-"].soc-windows:hover {
+    color: #00bdf6;
+    border-color: #00bdf6;
+  }
+  &.color-icon.soc-outlook, &[class*="soc-"].soc-outlook:hover {
+    color: #0072c6;
+    border-color: #0072c6;
+  }
+  &.color-icon.soc-coderwall, &[class*="soc-"].soc-coderwall:hover {
+    color: #3e8dcc;
+    border-color: #3e8dcc;
+  }
+  &.color-icon.soc-tripadvisor, &[class*="soc-"].soc-tripadvisor:hover {
+    color: #000000;
+    border-color: #000000;
+  }
+  &.color-icon.soc-appnet, &[class*="soc-"].soc-appnet:hover {
+    color: #494949;
+    border-color: #494949;
+  }
+  &.color-icon.soc-goodreads, &[class*="soc-"].soc-goodreads:hover {
+    color: #1abc9c;
+    border-color: #1abc9c;
+  }
+  &.color-icon.soc-tripit, &[class*="soc-"].soc-tripit:hover {
+    color: #1982c3;
+    border-color: #1982c3;
+  }
+  &.color-icon.soc-lanyrd, &[class*="soc-"].soc-lanyrd:hover {
+    color: #3c80c9;
+    border-color: #3c80c9;
+  }
+  &.color-icon.soc-slideshare, &[class*="soc-"].soc-slideshare:hover {
+    color: #4ba3a6;
+    border-color: #4ba3a6;
+  }
+  &.color-icon.soc-buffer, &[class*="soc-"].soc-buffer:hover {
+    color: #000000;
+    border-color: #000000;
+  }
+  &.color-icon.soc-rss, &[class*="soc-"].soc-rss:hover {
+    color: #f26109;
+    border-color: #f26109;
+  }
+  &.color-icon.soc-vkontakte, &[class*="soc-"].soc-vkontakte:hover {
+    color: #5a7fa6;
+    border-color: #5a7fa6;
+  }
+  &.color-icon.soc-disqus, &[class*="soc-"].soc-disqus:hover {
+    color: #2e9fff;
+    border-color: #2e9fff;
+  }
+  &.color-icon.soc-houzz, &[class*="soc-"].soc-houzz:hover {
+    color: #7cc04b;
+    border-color: #7cc04b;
+  }
+  &.color-icon.soc-mail, &[class*="soc-"].soc-mail:hover {
+    color: #000000;
+    border-color: #000000;
+  }
+  &.color-icon.soc-patreon, &[class*="soc-"].soc-patreon:hover {
+    color: #e44727;
+    border-color: #e44727;
+  }
+  &.color-icon.soc-paypal, &[class*="soc-"].soc-paypal:hover {
+    color: #009cde;
+    border-color: #009cde;
+  }
+  &.color-icon.soc-playstation, &[class*="soc-"].soc-playstation:hover {
+    color: #000000;
+    border-color: #000000;
+  }
+  &.color-icon.soc-smugmug, &[class*="soc-"].soc-smugmug:hover {
+    color: #acfd32;
+    border-color: #acfd32;
+  }
+  &.color-icon.soc-swarm, &[class*="soc-"].soc-swarm:hover {
+    color: #fc9d3c;
+    border-color: #fc9d3c;
+  }
+  &.color-icon.soc-triplej, &[class*="soc-"].soc-triplej:hover {
+    color: #e53531;
+    border-color: #e53531;
+  }
+  &.color-icon.soc-yammer, &[class*="soc-"].soc-yammer:hover {
+    color: #1175c4;
+    border-color: #1175c4;
+  }
+  &.color-icon.soc-stackoverflow, &[class*="soc-"].soc-stackoverflow:hover {
+    color: #fd9827;
+    border-color: #fd9827;
+  }
+  &.color-icon.soc-drupal, &[class*="soc-"].soc-drupal:hover {
+    color: #00598e;
+    border-color: #00598e;
+  }
+  &.color-icon.soc-odnoklassniki, &[class*="soc-"].soc-odnoklassniki:hover {
+    color: #f48420;
+    border-color: #f48420;
+  }
+  &.color-icon.soc-android, &[class*="soc-"].soc-android:hover {
+    color: #8ec047;
+    border-color: #8ec047;
+  }
+  &.color-icon.soc-meetup, &[class*="soc-"].soc-meetup:hover {
+    color: #e2373c;
+    border-color: #e2373c;
+  }
+  &.color-icon.soc-persona, &[class*="soc-"].soc-persona:hover {
+    color: #e6753d;
+    border-color: #e6753d;
+  }
+  &.color-icon.soc-amazon, &[class*="soc-"].soc-amazon:hover {
+    color: #ff9900;
+    border-color: #ff9900;
+  }
+  &.color-icon.soc-ello, &[class*="soc-"].soc-ello:hover {
+    color: #000000;
+    border-color: #000000;
+  }
+  &.color-icon.soc-mixcloud, &[class*="soc-"].soc-mixcloud:hover {
+    color: #314359;
+    border-color: #314359;
+  }
+  &.color-icon.soc-8tracks, &[class*="soc-"].soc-8tracks:hover {
+    color: #122c4b;
+    border-color: #122c4b;
+  }
+  &.color-icon.soc-twitch, &[class*="soc-"].soc-twitch:hover {
+    color: #6441a5;
+    border-color: #6441a5;
+  }
+  &.color-icon.soc-airbnb, &[class*="soc-"].soc-airbnb:hover {
+    color: #ff5a5f;
+    border-color: #ff5a5f;
+  }
+  &.color-icon.soc-pocket, &[class*="soc-"].soc-pocket:hover {
+    color: #ed4055;
+    border-color: #ed4055;
+  }
+}

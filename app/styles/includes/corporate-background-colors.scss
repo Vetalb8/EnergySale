@@ -1,0 +1,380 @@
+/*corporate background colors*/
+
+.color-bg-icon {
+  color: #ffffff;
+  &.soc-twitter {
+    background-color: #00abef;
+  }
+}
+
+a.soc-twitter.bg-icon:hover, .soc-twitter.color-icon.border-icon:hover {
+  background-color: #00abef;
+}
+
+.color-bg-icon.soc-facebook, a.soc-facebook.bg-icon:hover, .soc-facebook.color-icon.border-icon:hover {
+  background-color: #507cbe;
+}
+
+.color-bg-icon.soc-google, a.soc-google.bg-icon:hover, .soc-google.color-icon.border-icon:hover {
+  background-color: #d93e2d;
+}
+
+.color-bg-icon.soc-pinterest, a.soc-pinterest.bg-icon:hover, .soc-pinterest.color-icon.border-icon:hover {
+  background-color: #c92619;
+}
+
+.color-bg-icon.soc-foursquare, a.soc-foursquare.bg-icon:hover, .soc-foursquare.color-icon.border-icon:hover {
+  background-color: #23b7e0;
+}
+
+.color-bg-icon.soc-yahoo, a.soc-yahoo.bg-icon:hover, .soc-yahoo.color-icon.border-icon:hover {
+  background-color: #6e2a85;
+}
+
+.color-bg-icon.soc-skype, a.soc-skype.bg-icon:hover, .soc-skype.color-icon.border-icon:hover {
+  background-color: #28abe3;
+}
+
+.color-bg-icon.soc-yelp, a.soc-yelp.bg-icon:hover, .soc-yelp.color-icon.border-icon:hover {
+  background-color: #c83218;
+}
+
+.color-bg-icon.soc-feedburner, a.soc-feedburner.bg-icon:hover, .soc-feedburner.color-icon.border-icon:hover {
+  background-color: #ffcc00;
+}
+
+.color-bg-icon.soc-linkedin, a.soc-linkedin.bg-icon:hover, .soc-linkedin.color-icon.border-icon:hover {
+  background-color: #3371b7;
+}
+
+.color-bg-icon.soc-viadeo, a.soc-viadeo.bg-icon:hover, .soc-viadeo.color-icon.border-icon:hover {
+  background-color: #e4a000;
+}
+
+.color-bg-icon.soc-xing, a.soc-xing.bg-icon:hover, .soc-xing.color-icon.border-icon:hover {
+  background-color: #005a60;
+}
+
+.color-bg-icon.soc-myspace, a.soc-myspace.bg-icon:hover, .soc-myspace.color-icon.border-icon:hover {
+  background-color: #323232;
+}
+
+.color-bg-icon.soc-soundcloud, a.soc-soundcloud.bg-icon:hover, .soc-soundcloud.color-icon.border-icon:hover {
+  background-color: #fe3801;
+}
+
+.color-bg-icon.soc-spotify, a.soc-spotify.bg-icon:hover, .soc-spotify.color-icon.border-icon:hover {
+  background-color: #7bb342;
+}
+
+.color-bg-icon.soc-grooveshark, a.soc-grooveshark.bg-icon:hover, .soc-grooveshark.color-icon.border-icon:hover {
+  background-color: #f67e03;
+}
+
+.color-bg-icon.soc-lastfm, a.soc-lastfm.bg-icon:hover, .soc-lastfm.color-icon.border-icon:hover {
+  background-color: #d41316;
+}
+
+.color-bg-icon.soc-youtube, a.soc-youtube.bg-icon:hover, .soc-youtube.color-icon.border-icon:hover {
+  background-color: #d12121;
+}
+
+.color-bg-icon.soc-vimeo, a.soc-vimeo.bg-icon:hover, .soc-vimeo.color-icon.border-icon:hover {
+  background-color: #51b5e7;
+}
+
+.color-bg-icon.soc-dailymotion, a.soc-dailymotion.bg-icon:hover, .soc-dailymotion.color-icon.border-icon:hover {
+  background-color: #004e72;
+}
+
+.color-bg-icon.soc-vine, a.soc-vine.bg-icon:hover, .soc-vine.color-icon.border-icon:hover {
+  background-color: #00b389;
+}
+
+.color-bg-icon.soc-flickr, a.soc-flickr.bg-icon:hover, .soc-flickr.color-icon.border-icon:hover {
+  background-color: #0062dd;
+}
+
+.color-bg-icon.soc-500px, a.soc-500px.bg-icon:hover, .soc-500px.color-icon.border-icon:hover {
+  background-color: #58a9de;
+}
+
+.color-bg-icon.soc-instagram, a.soc-instagram.bg-icon:hover, .soc-instagram.color-icon.border-icon:hover {
+  background-color: #9c7c6e;
+}
+
+.color-bg-icon.soc-wordpress, a.soc-wordpress.bg-icon:hover, .soc-wordpress.color-icon.border-icon:hover {
+  background-color: #464646;
+}
+
+.color-bg-icon.soc-tumblr, a.soc-tumblr.bg-icon:hover, .soc-tumblr.color-icon.border-icon:hover {
+  background-color: #45556c;
+}
+
+.color-bg-icon.soc-blogger, a.soc-blogger.bg-icon:hover, .soc-blogger.color-icon.border-icon:hover {
+  background-color: #ec661c;
+}
+
+.color-bg-icon.soc-technorati, a.soc-technorati.bg-icon:hover, .soc-technorati.color-icon.border-icon:hover {
+  background-color: #5cb030;
+}
+
+.color-bg-icon.soc-reddit, a.soc-reddit.bg-icon:hover, .soc-reddit.color-icon.border-icon:hover {
+  background-color: #e74a1e;
+}
+
+.color-bg-icon.soc-dribbble, a.soc-dribbble.bg-icon:hover, .soc-dribbble.color-icon.border-icon:hover {
+  background-color: #e84d88;
+}
+
+.color-bg-icon.soc-stumbleupon, a.soc-stumbleupon.bg-icon:hover, .soc-stumbleupon.color-icon.border-icon:hover {
+  background-color: #e64011;
+}
+
+.color-bg-icon.soc-digg, a.soc-digg.bg-icon:hover, .soc-digg.color-icon.border-icon:hover {
+  background-color: #1d1d1b;
+}
+
+.color-bg-icon.soc-envato, a.soc-envato.bg-icon:hover, .soc-envato.color-icon.border-icon:hover {
+  background-color: #597c3a;
+}
+
+.color-bg-icon.soc-behance, a.soc-behance.bg-icon:hover, .soc-behance.color-icon.border-icon:hover {
+  background-color: #007eff;
+}
+
+.color-bg-icon.soc-delicious, a.soc-delicious.bg-icon:hover, .soc-delicious.color-icon.border-icon:hover {
+  background-color: #31a9ff;
+}
+
+.color-bg-icon.soc-deviantart, a.soc-deviantart.bg-icon:hover, .soc-deviantart.color-icon.border-icon:hover {
+  background-color: #c5d200;
+}
+
+.color-bg-icon.soc-forrst, a.soc-forrst.bg-icon:hover, .soc-forrst.color-icon.border-icon:hover {
+  background-color: #5b9a68;
+}
+
+.color-bg-icon.soc-play, a.soc-play.bg-icon:hover, .soc-play.color-icon.border-icon:hover {
+  background-color: #5acdbd;
+}
+
+.color-bg-icon.soc-zerply, a.soc-zerply.bg-icon:hover, .soc-zerply.color-icon.border-icon:hover {
+  background-color: #9dbc7a;
+}
+
+.color-bg-icon.soc-wikipedia, a.soc-wikipedia.bg-icon:hover, .soc-wikipedia.color-icon.border-icon:hover {
+  background-color: #000000;
+}
+
+.color-bg-icon.soc-apple, a.soc-apple.bg-icon:hover, .soc-apple.color-icon.border-icon:hover {
+  background-color: #b9bfc1;
+}
+
+.color-bg-icon.soc-flattr, a.soc-flattr.bg-icon:hover, .soc-flattr.color-icon.border-icon:hover {
+  background-color: #f67c1a;
+}
+
+.color-bg-icon.soc-github, a.soc-github.bg-icon:hover, .soc-github.color-icon.border-icon:hover {
+  background-color: #221e1b;
+}
+
+.color-bg-icon.soc-chimein, a.soc-chimein.bg-icon:hover, .soc-chimein.color-icon.border-icon:hover {
+  background-color: #888688;
+}
+
+.color-bg-icon.soc-friendfeed, a.soc-friendfeed.bg-icon:hover, .soc-friendfeed.color-icon.border-icon:hover {
+  background-color: #2f72c4;
+}
+
+.color-bg-icon.soc-newsvine, a.soc-newsvine.bg-icon:hover, .soc-newsvine.color-icon.border-icon:hover {
+  background-color: #075b2f;
+}
+
+.color-bg-icon.soc-identica, a.soc-identica.bg-icon:hover, .soc-identica.color-icon.border-icon:hover {
+  background-color: #000000;
+}
+
+.color-bg-icon.soc-bebo, a.soc-bebo.bg-icon:hover, .soc-bebo.color-icon.border-icon:hover {
+  background-color: #ef1011;
+}
+
+.color-bg-icon.soc-zynga, a.soc-zynga.bg-icon:hover, .soc-zynga.color-icon.border-icon:hover {
+  background-color: #dc0606;
+}
+
+.color-bg-icon.soc-steam, a.soc-steam.bg-icon:hover, .soc-steam.color-icon.border-icon:hover {
+  background-color: #8f8d8a;
+}
+
+.color-bg-icon.soc-xbox, a.soc-xbox.bg-icon:hover, .soc-xbox.color-icon.border-icon:hover {
+  background-color: #92c83e;
+}
+
+.color-bg-icon.soc-windows, a.soc-windows.bg-icon:hover, .soc-windows.color-icon.border-icon:hover {
+  background-color: #00bdf6;
+}
+
+.color-bg-icon.soc-outlook, a.soc-outlook.bg-icon:hover, .soc-outlook.color-icon.border-icon:hover {
+  background-color: #0072c6;
+}
+
+.color-bg-icon.soc-coderwall, a.soc-coderwall.bg-icon:hover, .soc-coderwall.color-icon.border-icon:hover {
+  background-color: #3e8dcc;
+}
+
+.color-bg-icon.soc-tripadvisor, a.soc-tripadvisor.bg-icon:hover, .soc-tripadvisor.color-icon.border-icon:hover {
+  background-color: #000000;
+}
+
+.color-bg-icon.soc-appnet, a.soc-appnet.bg-icon:hover, .soc-appnet.color-icon.border-icon:hover {
+  background-color: #494949;
+}
+
+.color-bg-icon.soc-goodreads, a.soc-goodreads.bg-icon:hover, .soc-goodreads.color-icon.border-icon:hover {
+  background-color: #1abc9c;
+}
+
+.color-bg-icon.soc-tripit, a.soc-tripit.bg-icon:hover, .soc-tripit.color-icon.border-icon:hover {
+  background-color: #1982c3;
+}
+
+.color-bg-icon.soc-lanyrd, a.soc-lanyrd.bg-icon:hover, .soc-lanyrd.color-icon.border-icon:hover {
+  background-color: #3c80c9;
+}
+
+.color-bg-icon.soc-slideshare, a.soc-slideshare.bg-icon:hover, .soc-slideshare.color-icon.border-icon:hover {
+  background-color: #4ba3a6;
+}
+
+.color-bg-icon.soc-buffer, a.soc-buffer.bg-icon:hover, .soc-buffer.color-icon.border-icon:hover {
+  background-color: #000000;
+}
+
+.color-bg-icon.soc-rss, a.soc-rss.bg-icon:hover, .soc-rss.color-icon.border-icon:hover {
+  background-color: #f26109;
+}
+
+.color-bg-icon.soc-vkontakte, a.soc-vkontakte.bg-icon:hover, .soc-vkontakte.color-icon.border-icon:hover {
+  background-color: #5a7fa6;
+}
+
+.color-bg-icon.soc-disqus, a.soc-disqus.bg-icon:hover, .soc-disqus.color-icon.border-icon:hover {
+  background-color: #2e9fff;
+}
+
+.color-bg-icon.soc-houzz, a.soc-houzz.bg-icon:hover, .soc-houzz.color-icon.border-icon:hover {
+  background-color: #7cc04b;
+}
+
+.color-bg-icon.soc-mail, a.soc-mail.bg-icon:hover, .soc-mail.color-icon.border-icon:hover {
+  background-color: #000000;
+}
+
+.color-bg-icon.soc-patreon, a.soc-patreon.bg-icon:hover, .soc-patreon.color-icon.border-icon:hover {
+  background-color: #e44727;
+}
+
+.color-bg-icon.soc-paypal, a.soc-paypal.bg-icon:hover, .soc-paypal.color-icon.border-icon:hover {
+  background-color: #009cde;
+}
+
+.color-bg-icon.soc-playstation, a.soc-playstation.bg-icon:hover, .soc-playstation.color-icon.border-icon:hover {
+  background-color: #000000;
+}
+
+.color-bg-icon.soc-smugmug, a.soc-smugmug.bg-icon:hover, .soc-smugmug.color-icon.border-icon:hover {
+  background-color: #acfd32;
+}
+
+.color-bg-icon.soc-swarm, a.soc-swarm.bg-icon:hover, .soc-swarm.color-icon.border-icon:hover {
+  background-color: #fc9d3c;
+}
+
+.color-bg-icon.soc-triplej, a.soc-triplej.bg-icon:hover, .soc-triplej.color-icon.border-icon:hover {
+  background-color: #e53531;
+}
+
+.color-bg-icon.soc-yammer, a.soc-yammer.bg-icon:hover, .soc-yammer.color-icon.border-icon:hover {
+  background-color: #1175c4;
+}
+
+.color-bg-icon.soc-stackoverflow, a.soc-stackoverflow.bg-icon:hover, .soc-stackoverflow.color-icon.border-icon:hover {
+  background-color: #fd9827;
+}
+
+.color-bg-icon.soc-drupal, a.soc-drupal.bg-icon:hover, .soc-drupal.color-icon.border-icon:hover {
+  background-color: #00598e;
+}
+
+.color-bg-icon.soc-odnoklassniki, a.soc-odnoklassniki.bg-icon:hover, .soc-odnoklassniki.color-icon.border-icon:hover {
+  background-color: #f48420;
+}
+
+.color-bg-icon.soc-android, a.soc-android.bg-icon:hover, .soc-android.color-icon.border-icon:hover {
+  background-color: #8ec047;
+}
+
+.color-bg-icon.soc-meetup, a.soc-meetup.bg-icon:hover, .soc-meetup.color-icon.border-icon:hover {
+  background-color: #e2373c;
+}
+
+.color-bg-icon.soc-persona, a.soc-persona.bg-icon:hover, .soc-persona.color-icon.border-icon:hover {
+  background-color: #e6753d;
+}
+
+.color-bg-icon.soc-amazon, a.soc-amazon.bg-icon:hover, .soc-amazon.color-icon.border-icon:hover {
+  background-color: #ff9900;
+}
+
+.color-bg-icon.soc-ello, a.soc-ello.bg-icon:hover, .soc-ello.color-icon.border-icon:hover {
+  background-color: #000000;
+}
+
+.color-bg-icon.soc-mixcloud, a.soc-mixcloud.bg-icon:hover, .soc-mixcloud.color-icon.border-icon:hover {
+  background-color: #314359;
+}
+
+.color-bg-icon.soc-8tracks, a.soc-8tracks.bg-icon:hover, .soc-8tracks.color-icon.border-icon:hover {
+  background-color: #122c4b;
+}
+
+.color-bg-icon.soc-twitch, a.soc-twitch.bg-icon:hover, .soc-twitch.color-icon.border-icon:hover {
+  background-color: #6441a5;
+}
+
+.color-bg-icon.soc-airbnb, a.soc-airbnb.bg-icon:hover, .soc-airbnb.color-icon.border-icon:hover {
+  background-color: #ff5a5f;
+}
+
+.color-bg-icon.soc-pocket, a.soc-pocket.bg-icon:hover, .soc-pocket.color-icon.border-icon:hover {
+  background-color: #ed4055;
+}
+
+.demo-icon {
+  display: inline-block;
+  text-align: center;
+  padding: 15px 20px 10px;
+  span {
+    display: block;
+  }
+  .name {
+    font-size: 1.01em;
+    font-weight: 700;
+    color: #323232;
+  }
+  a[class*="soc-"] {
+    color: #323232;
+    font-size: 24px;
+    margin: 10px 0 0;
+  }
+}
+
+.social-icons-demo a {
+  &[class*="soc-"] {
+    margin: 10px !important;
+  }
+  + a {
+    margin: 0 !important;
+  }
+}

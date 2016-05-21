@@ -1,0 +1,74 @@
+/*carousel*/
+
+.carousel {
+  overflow: hidden;
+}
+
+.carousel-indicators {
+  li {
+    width: 10px;
+    height: 10px;
+    border-width: 0;
+    background-color: #323232;
+    margin: 0 3px;
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    -o-transition: all 0.2s ease-in-out 0s;
+    -ms-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  .active {
+    width: 10px;
+    height: 10px;
+    margin: 0 3px;
+    background-color: #f5bb2c;
+  }
+}
+
+.carousel-control {
+  border: 1px solid #ffffff;
+  color: #ffffff !important;
+  border-radius: 0px;
+  width: 50px;
+  height: 50px;
+  left: -50px;
+  top: 50%;
+  margin-top: -25px;
+  text-shadow: none;
+  opacity: 1;
+  background-image: none !important;
+  filter: alpha(opacity = 100);
+  &.right {
+    right: -50px;
+  }
+}
+
+.carousel:hover .carousel-control {
+  left: 50px;
+  &.right {
+    left: auto;
+    right: 50px;
+  }
+}
+
+.carousel-control {
+  span {
+    font-family: 'rt-icons-2' !important;
+    width: 50px !important;
+    height: 50px !important;
+    margin: 0 !important;
+    font-size: 16px !important;
+    left: 0 !important;
+    top: 0 !important;
+    line-height: 50px !important;
+  }
+  .icon-prev:before {
+    content: "\e7c4";
+  }
+  .icon-next:before {
+    content: "\e7c5";
+  }
+}

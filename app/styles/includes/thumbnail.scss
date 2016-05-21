@@ -1,0 +1,41 @@
+/*thumbnail*/
+
+.thumbnail {
+  position: relative;
+  text-align: center;
+  border-radius: 0;
+  padding: 0;
+  border: none;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.isotope-item .thumbnail {
+  margin-bottom: 30px;
+}
+
+.thumbnail {
+  h3 {
+    font-size: 20px;
+    margin-bottom: 2px;
+    color: #323232;
+    a {
+      color: inherit;
+      &:hover {
+        color: #f5bb2c;
+      }
+    }
+    + p {
+      color: #f5bb2c;
+      margin-bottom: 10px;
+    }
+  }
+  .caption {
+    color: #9a9a9a;
+    background-color: #ffffff;
+    padding: 16px 20px 26px;
+  }
+  a[class*="soc-"]:before {
+    color: #9a9a9a;
+  }
+}

@@ -1,0 +1,162 @@
+/*dividers, margins and paddings*/
+
+.divider_20 {
+  margin: 20px 0;
+}
+
+.divider_30 {
+  margin: 30px 0;
+}
+
+.divider_40 {
+  margin: 40px 0;
+}
+
+.topmargin_0 {
+  margin-top: 0 !important;
+}
+
+.topmargin_1 {
+  margin-top: 1px;
+}
+
+.topmargin_10 {
+  margin-top: 10px;
+}
+
+.topmargin_20 {
+  margin-top: 20px;
+}
+
+.topmargin_30 {
+  margin-top: 30px;
+}
+
+.topmargin_40 {
+  margin-top: 40px;
+}
+
+.topmargin_60 {
+  margin-top: 60px;
+}
+
+.bottommargin_0 {
+  margin-bottom: 0;
+}
+
+.bottommargin_10 {
+  margin-bottom: 10px;
+}
+
+.bottommargin_20 {
+  margin-bottom: 20px;
+}
+
+.bottommargin_30 {
+  margin-bottom: 30px;
+}
+
+.bottommargin_40 {
+  margin-bottom: 40px;
+}
+
+.bottommargin_60 {
+  margin-bottom: 60px;
+}
+
+.margin_0 {
+  margin: 0;
+}
+
+.padding_0 {
+  padding: 0;
+}
+
+.padding_10 {
+  padding: 10px;
+}
+
+.padding_20 {
+  padding: 20px;
+}
+
+.padding_30 {
+  padding: 30px;
+}
+
+.padding_40 {
+  padding: 40px;
+}
+
+.fontsize_16 {
+  font-size: 16px;
+}
+
+.fontsize_18 {
+  font-size: 18px;
+}
+
+.fontsize_20 {
+  font-size: 20px;
+}
+
+.fontsize_24 {
+  font-size: 24px;
+}
+
+.fontsize_32 {
+  font-size: 32px;
+}
+
+.columns_padding_0 [class*="col-"] {
+  padding: 0;
+}
+
+.columns_padding_1 [class*="col-"] {
+  padding-left: 0;
+  padding-right: 1px;
+}
+
+.columns_padding_2 [class*="col-"] {
+  padding-left: 1px;
+  padding-right: 1px;
+}
+
+.columns_padding_5 [class*="col-"] {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.columns_padding_0 > .container, .columns_padding_2 > .container, .columns_padding_1 > .container {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.columns_padding_0.table_section > .container {
+  padding: 0;
+}
+
+.columns_padding_5 > .container {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.row.columns_padding_2 {
+  margin-left: -1px;
+  margin-right: -1px;
+  > [class*="col-"] {
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+}
+
+@media (min-width: 500px) {
+  .columns_padding_25 > [class*="container"] > .row {
+    margin-right: -25px;
+    margin-left: -25px;
+    > [class*="col-"] {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  }
+}
