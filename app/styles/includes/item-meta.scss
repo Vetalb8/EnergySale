@@ -16,6 +16,10 @@
 .item-media {
   position: relative;
   overflow: hidden;
+
+  &_radius {
+    border-radius: 50px;
+  }
 }
 
 .media-links {
