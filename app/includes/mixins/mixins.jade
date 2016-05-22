@@ -7,3 +7,30 @@ mixin product(imgSrc, title, text, linkText)
       p.content__text=text
       .content__button
         a(href='#')=linkText
+
+mixin galary-item(imgSrc, linkHref)
+  .vertical-item.content-absolute
+    .item-media
+      img(src=imgSrc, alt='')
+      .media-links
+        a.abs-link(title='', href=linkHref)
+    .item-content.darken_gradient
+
+mixin services-item(imgSrc, imgAlt, title, linkText)
+  .col-md-3.col-sm-6
+    .vertical-item.content-absolute.square_teaser
+      .item-media
+        img(src=imgSrc, alt=imgAlt)
+      .item-content
+        h4=title
+        .teaser_icon.size_small.item-content__hide
+          a.item-content__button=linkText
+
+mixin news-item(linkMediaHref, imgSrc, titleHref, title, price)
+  li.media
+    a.media-left(href=linkMediaHref)
+      img.media-object(src=imgSrc, alt='')
+    .media-body
+      p
+        a(href=titleHref)=title
+      span=price

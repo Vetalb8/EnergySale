@@ -1,3 +1,4 @@
+include ../mixins/mixins
 section.ms.section_padding_50
   .container-fluid
     .row
@@ -7,54 +8,14 @@ section.ms.section_padding_50
     .row
       .col-sm-12
         .owl-carousel(data-margin='20', data-nav='true', data-items='6', data-themeclass='hover-scale')
-          .vertical-item.content-absolute
-            .item-media
-              img(src='images/events/01.jpg', alt='')
-              .media-links
-                a.abs-link(title='', href='gallery-single.html')
-            .item-content.darken_gradient
-          .vertical-item.content-absolute
-            .item-media
-              img(src='images/events/02.jpg', alt='')
-              .media-links
-                a.abs-link(title='', href='gallery-single.html')
-            .item-content.darken_gradient
-          .vertical-item.content-absolute
-            .item-media
-              img(src='images/events/03.jpg', alt='')
-              .media-links
-                a.abs-link(title='', href='gallery-single.html')
-            .item-content.darken_gradient
-          .vertical-item.content-absolute
-            .item-media
-              img(src='images/events/04.jpg', alt='')
-              .media-links
-                a.abs-link(title='', href='gallery-single.html')
-            .item-content.darken_gradient
-          .vertical-item.content-absolute
-            .item-media
-              img(src='images/events/05.jpg', alt='')
-              .media-links
-                a.abs-link(title='', href='gallery-single.html')
-            .item-content.darken_gradient
-          .vertical-item.content-absolute
-            .item-media
-              img(src='images/events/06.jpg', alt='')
-              .media-links
-                a.abs-link(title='', href='gallery-single.html')
-            .item-content.darken_gradient
-          .vertical-item.content-absolute
-            .item-media
-              img(src='images/events/07.jpg', alt='')
-              .media-links
-                a.abs-link(title='', href='gallery-single.html')
-            .item-content.darken_gradient
-          .vertical-item.content-absolute
-            .item-media
-              img(src='images/events/08.jpg', alt='')
-              .media-links
-                a.abs-link(title='', href='gallery-single.html')
-            .item-content.darken_gradient
+          +galary-item('images/events/01.jpg', 'gallery-single.html')
+          +galary-item('images/events/02.jpg', 'gallery-single.html')
+          +galary-item('images/events/03.jpg', 'gallery-single.html')
+          +galary-item('images/events/04.jpg', 'gallery-single.html')
+          +galary-item('images/events/05.jpg', 'gallery-single.html')
+          +galary-item('images/events/06.jpg', 'gallery-single.html')
+          +galary-item('images/events/07.jpg', 'gallery-single.html')
+          +galary-item('images/events/08.jpg', 'gallery-single.html')
         // .owl-carousel
       // .col-sm-12
     // .row
