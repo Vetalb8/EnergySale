@@ -23,8 +23,8 @@ mixin services-item(imgSrc, imgAlt, title, linkText)
         img(src=imgSrc, alt=imgAlt)
       .item-content
         h4=title
-        .teaser_icon.size_small.item-content__hide
-          a.item-content__button=linkText
+      .item-content__link
+        a.services-link(href='#') Перейти
 
 mixin news-item(linkMediaHref, imgSrc, titleHref, title, price)
   li.media
