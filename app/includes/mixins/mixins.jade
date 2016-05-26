@@ -24,7 +24,7 @@ mixin services-item(imgSrc, imgAlt, title, linkText)
       .item-content
         h4=title
       .item-content__link
-        a.services-link(href='#') Перейти
+        a.services-link(href='/service-items.html') Перейти
 
 mixin news-item(linkMediaHref, imgSrc, titleHref, title, price)
   li.media
@@ -34,3 +34,22 @@ mixin news-item(linkMediaHref, imgSrc, titleHref, title, price)
       p
         a(href=titleHref)=title
       span=price
+
+mixin default-tab-item(imgSrc, title, text)
+  .vertical-item.content-absolute.square_teaser
+    .item-media
+      img(src=imgSrc)
+    .item-content
+      h4=title
+      p=text
+
+mixin tab-item1(imgSrc, title, text)
+  .vertical-item.post.content-padding.text-center.ls
+    .item-media
+      img(src=imgSrc)
+      .media-links
+        a.abs-lin(href='#')
+    .item-content
+      h3.entry-title
+        a(href='#')=title
+      p=text

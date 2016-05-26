@@ -1,157 +1,48 @@
+include ../mixins/mixins
 // Nav tabs
 ul.nav.nav-tabs(role='tablist')
   li.active
-    a(href='#tab1', role='tab', data-toggle='tab') Солнечные панели
+    a(href='#tab1', role='tab', data-toggle='tab') Все
   li
-    a(href='#tab2', role='tab', data-toggle='tab') Ветро генераторы
+    a(href='#tab2', role='tab', data-toggle='tab') Солнечные батареи Sunways
+  li
+    a(href='#tab3', role='tab', data-toggle='tab') Солнечные батареи One-sun
 // Tab panes
 .tab-content.no-border.top-color-border
   #tab1.tab-pane.fade.in.active
     .row.columns_padding_2
-      .col-md-3.col-sm-6
-        .vertical-item.content-absolute.square_teaser
-          .item-media
-            img(src='images/events/01.jpg', alt='')
-          .item-content
-            h4
-              | Сервис
-            p Здесь будет какой-то текст.
-      .col-md-3.col-sm-6
-        .vertical-item.content-absolute.square_teaser
-          .item-media
-            img(src='images/events/02.jpg', alt='')
-          .item-content
-            h4
-              | Сервис
-            p Здесь будет какой-то текст.
-      .col-md-3.col-sm-6
-        .vertical-item.content-absolute.square_teaser
-          .item-media
-            img(src='images/events/03.jpg', alt='')
-          .item-content
-            h4
-              | Сервис
-            p Здесь будет какой-то текст.
-      .col-md-3.col-sm-6
-        .vertical-item.content-absolute.square_teaser
-          .item-media
-            img(src='images/events/04.jpg', alt='')
-          .item-content
-            h4
-              | Сервис
-            p Здесь будет какой-то текст.
-      .col-md-3.col-sm-6
-        .vertical-item.content-absolute.square_teaser
-          .item-media
-            img(src='images/events/05.jpg', alt='')
-          .item-content
-            h4
-              | Сервис
-            p Здесь будет какой-то текст.
-      .col-md-3.col-sm-6
-        .vertical-item.content-absolute.square_teaser
-          .item-media
-            img(src='images/events/06.jpg', alt='')
-          .item-content
-            h4
-              | Сервис
-            p Здесь будет какой-то текст.
-      .col-md-3.col-sm-6
-        .vertical-item.content-absolute.square_teaser
-          .item-media
-            img(src='images/events/07.jpg', alt='')
-          .item-content
-            h4
-              | Сервис
-            p Здесь будет какой-то текст.
-      .col-md-3.col-sm-6
-        .vertical-item.content-absolute.square_teaser
-          .item-media
-            img(src='images/events/08.jpg', alt='')
-          .item-content
-            h4
-              | Сервис
-            p Здесь будет какой-то текст.
+      .col-md-4.col-sm-6
+        +tab-item1('images/events/01.jpg', 'Сервис', 'Здесь.')
+      .col-md-4.col-sm-6
+        +tab-item1('images/events/01.jpg', 'Сервис', 'Здесь.')
+      .col-md-4.col-sm-6
+        +tab-item1('images/events/01.jpg', 'Сервис', 'Здесь.')
+      .col-md-4.col-sm-6
+        +tab-item1('images/events/01.jpg', 'Сервис', 'Здесь.')
+      .col-md-4.col-sm-6
+        +tab-item1('images/events/01.jpg', 'Сервис', 'Здесь.')
+      .col-md-4.col-sm-6
+        +tab-item1('images/events/01.jpg', 'Сервис', 'Здесь.')
     // .row
   #tab2.tab-pane.fade
     .row.columns_padding_2
       .col-md-3.col-sm-6
-        .vertical-item.content-absolute.square_teaser
-          .item-media
-            img(src='images/events/06.jpg', alt='')
-          .item-content
-            h4
-              | Сервис
-            p Здесь будет какой-то текст.
-          .teaser_icon.size_small
-            i.rt-icon2-data
+        +tab-item1('images/events/01.jpg', 'Сервис', 'Здесь.')
       .col-md-3.col-sm-6
-        .vertical-item.content-absolute.square_teaser
-          .item-media
-            img(src='images/events/07.jpg', alt='')
-          .item-content
-            h4
-              | Сервис
-            p Здесь будет какой-то текст.
-          .teaser_icon.size_small
-            i.rt-icon2-wallet2
+        +tab-item1('images/events/01.jpg', 'Сервис', 'Здесь.')
       .col-md-3.col-sm-6
-        .vertical-item.content-absolute.square_teaser
-          .item-media
-            img(src='images/events/08.jpg', alt='')
-          .item-content
-            h4
-              | Сервис
-            p Здесь будет какой-то текст.
-          .teaser_icon.size_small
-            i.rt-icon2-fire
+        +tab-item1('images/events/01.jpg', 'Сервис', 'Здесь.')
       .col-md-3.col-sm-6
-        .vertical-item.content-absolute.square_teaser
-          .item-media
-            img(src='images/events/01.jpg', alt='')
-          .item-content
-            h4
-              | Сервис
-            p Здесь будет какой-то текст.
-          .teaser_icon.size_small
-            i.rt-icon2-trash
+        +tab-item1('images/events/01.jpg', 'Сервис', 'Здесь.')
       .col-md-3.col-sm-6
-        .vertical-item.content-absolute.square_teaser
-          .item-media
-            img(src='images/events/02.jpg', alt='')
-          .item-content
-            h4
-              | Сервис
-            p Здесь будет какой-то текст.
-          .teaser_icon.size_small
-            i.rt-icon2-paperplane
+        +tab-item1('images/events/01.jpg', 'Сервис', 'Здесь.')
       .col-md-3.col-sm-6
-        .vertical-item.content-absolute.square_teaser
-          .item-media
-            img(src='images/events/03.jpg', alt='')
-          .item-content
-            h4
-              | Сервис
-            p Здесь будет какой-то текст.
-          .teaser_icon.size_small
-            i.rt-icon2-bulb
+        +tab-item1('images/events/01.jpg', 'Сервис', 'Здесь.')
+  // .row
+  #tab3.tab-pane.fade
+    .row.columns_padding_2
       .col-md-3.col-sm-6
-        .vertical-item.content-absolute.square_teaser
-          .item-media
-            img(src='images/events/04.jpg', alt='')
-          .item-content
-            h4
-              | Сервис
-            p Здесь будет какой-то текст.
-          .teaser_icon.size_small
-            i.rt-icon2-settings
+        +tab-item1('images/events/01.jpg', 'Сервис', 'Здесь.')
       .col-md-3.col-sm-6
-        .vertical-item.content-absolute.square_teaser
-          .item-media
-            img(src='images/events/05.jpg', alt='')
-          .item-content
-            h4
-              | Сервис
-            p Здесь будет какой-то текст.
-          .teaser_icon.size_small
-            i.rt-icon2-world
+        +tab-item1('images/events/01.jpg', 'Сервис', 'Здесь.')
+
