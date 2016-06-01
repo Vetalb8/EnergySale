@@ -24,7 +24,7 @@ mixin services-item(imgSrc, imgAlt, title, linkText)
       .item-content
         h4=title
       .item-content__link
-        a.services-link(href='/service-items.html') Перейти
+        a.services-link(href='/category.html') Перейти
 
 mixin news-item(linkMediaHref, imgSrc, titleHref, title, price)
   li.media
@@ -40,16 +40,34 @@ mixin default-tab-item(imgSrc, title, text)
     .item-media
       img(src=imgSrc)
     .item-content
-      h4=title
+      h2=title
       p=text
 
 mixin tab-item1(imgSrc, title, text)
-  .vertical-item.post.content-padding.text-center.ls
-    .item-media
-      img(src=imgSrc)
-      .media-links
-        a.abs-lin(href='#')
-    .item-content
-      h3.entry-title
-        a(href='#')=title
-      p=text
+  .wrapper-vertical-item
+    .vertical-item.post.content-padding.text-center.ls
+      .item-media
+        img(src=imgSrc)
+        .media-links
+          a.abs-lin(href='#')
+      .item-content
+        h3.entry-title
+          a(href='#')=title
+        p=text
+        a.item-content_btn(href='item.html') Подробнее
+
+mixin tab-item2(imgSrc, title, text)
+  .isotope-item.bottommargin_30.col-lg-4.col-md-6.col-sm-12.photography
+    .vertical-item.gallery-extended-item.with_background.text-center
+      .item-media
+        img(src=imgSrc, alt='')
+        .media-links
+          a.abs-link(title='', href='gallery-single.html')
+      .item-content
+        h3.item-title
+          a(href='gallery-single.html')=title
+        span.categories-links
+          a.theme_button.small_button.color1(rel='category', href='gallery-extended-2-cols.html') Category 1
+        p=text
+        .item-button
+          a.theme_button.wide_button.inverse(href='item.html') Подробнее

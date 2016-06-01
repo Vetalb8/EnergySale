@@ -1,0 +1,124 @@
+include ../mixins/mixins.jade
+
+section.ls.ms.section_padding_top_50.section_padding_bottom_50.columns_padding_25
+  .container
+    .row
+      .col-sm-7.col-md-8.col-lg-8
+        .product.type-product.row(itemscope='', itemtype='http://schema.org/Product')
+          .images.col-sm-6
+            a.main-image.zoom(href='images/shop/02.jpg', itemprop='image', title='', data-gal='prettyPhoto[product-gallery]')
+              span.onsale Распродажа
+              span.newproduct Новое
+              img.attachment-shop_single.wp-post-image(src='images/shop/02.jpg', alt='', title='')
+            #product-thumbnails.owl-carousel.thumbnails.product-thumbnails(data-loop='true', data-center='true', data-margin='10', data-nav='false', data-dots='true', data-items='3', data-responsive-lg='3', data-responsive-md='3', data-responsive-sm='2', data-responsive-xs='2')
+              a.zoom.first(href='images/gallery/02.jpg', title='', data-gal='prettyPhoto[product-gallery]')
+                img.attachment-shop_thumbnail(src='images/gallery/02.jpg', alt='')
+              a.zoom.first(href='images/gallery/03.jpg', title='', data-gal='prettyPhoto[product-gallery]')
+                img.attachment-shop_thumbnail(src='images/gallery/03.jpg', alt='')
+              a.zoom.first(href='images/gallery/04.jpg', title='', data-gal='prettyPhoto[product-gallery]')
+                img.attachment-shop_thumbnail(src='images/gallery/04.jpg', alt='')
+              a.zoom.first(href='images/gallery/05.jpg', title='', data-gal='prettyPhoto[product-gallery]')
+                img.attachment-shop_thumbnail(src='images/gallery/05.jpg', alt='')
+          // eof .images
+          .summary.entry-summary.col-sm-6
+            h1.product_title.entry-title(itemprop='name') Солнечная панель
+            .product-rating(itemprop='aggregateRating', itemscope='', itemtype='http://schema.org/AggregateRating')
+              .star-rating(title='Rated 4.50 out of 5')
+                span(style='width:90%')
+                  strong.rating 4.50
+                  |  out of 5
+            .product_meta
+              span.posted_in
+                span.grey Категория:
+                span.categories-links
+                  a.theme_button.small_button.color1(rel='category', href='category.html') Солнечные панели
+            div(itemprop='offers', itemscope='', itemtype='http://schema.org/Offer')
+              div(itemprop='description')
+                p.product-description Поликристаллический солнечный модуль One-Sun 30П изготовлен из качественных солнечных элементов Grade A, что гарантирует высокую производительность и надежность модуля. Бюджетная линейка солнечных модулей One-Sun отличается превосходным соотношением цена/качество и бесспорно является одним из лучших предложений на рынке.
+              ul.list1.no-bullets
+                li
+                  p.price
+                    del
+                      span.amount 2000руб.
+                    ins
+                      span.amount 1350руб.
+                  meta(itemprop='price', content='2')
+                  meta(itemprop='priceCurrency', content='USD')
+                  link(itemprop='availability', href='http://schema.org/InStock')
+                  p.stock
+                    span.grey Наличие:
+                    |  На складе
+                  // <p class="stock out-of-stock"><span class="grey">Availability:</span> <span class="highlight">Out Of Stock</span></p>
+          // .summary.col-
+        // .product.row
+        // Nav tabs
+        ul.nav.nav-tabs(role='tablist')
+          li.active
+            a(href='#additional_tab', role='tab', data-toggle='tab') Характеристики
+          li
+            a(href='#details_tab', role='tab', data-toggle='tab') Описание
+        // Tab panes
+        .tab-content.top-color-border.bottommargin_30
+          #additional_tab.tab-pane.fade.active
+            table.table.table-striped.topmargin_30
+              tr
+                th.grey Бренд:
+                td One Sun
+              tr
+                th.grey Тип солнечных элементов:
+                td Поликристаллические
+              tr
+                th.grey Пиковая мощность:
+                td 30Вт, 0 ~ +3Вт
+              tr
+                th.grey Напряжение холостого хода:
+                td 22.6В
+              tr
+                th.grey Напряжение при пиковой мощности:
+                td 18,0В
+              tr
+                th.grey Ток при пиковой мощности:
+                td 1.66А
+              tr
+                th.grey Ток короткого замыкания:
+                td 1.76А
+          #details_tab.tab-pane.fade
+            p Описание
+        // eof .tab-content
+      .col-sm-5.col-md-4.col-lg-4
+        .with_background.with_padding.with_radius
+          .widget.widget_popular_entries
+            h3.widget-title Хиты продаж
+            ul.media-list.darklinks
+              +news-item('blog-single-right.html', 'images/recent_post1.jpg', 'blog-single-right.html', 'Солнечная панель', '2 400 руб.')
+              +news-item('blog-single-right.html', 'images/recent_post2.jpg', 'blog-single-right.html', 'Аккамулятор', '2 800 руб.')
+              +news-item('blog-single-right.html', 'images/recent_post1.jpg', 'blog-single-right.html', 'Ветрогенератор', '1 400 руб.')
+              +news-item('blog-single-right.html', 'images/recent_post2.jpg', 'blog-single-right.html', 'Контроллер', '5 450 руб.')
+        .with_background.with_padding.with_radius.with_margin-top
+          .widget.widget_slider
+            h3.widget-title Сопутсвующие товары
+            .owl-carousel(data-nav='true', data-loop='true', data-autoplay='true', data-items='1', data-responsive-lg='1', data-responsive-md='1', data-responsive-sm='1', data-responsive-xs='1')
+              .vertical-item
+                .item-media
+                  img(src='images/gallery/01.jpg', alt='')
+                .item-content
+                  h4 Инвертор SUN 1224
+                  p.item-meta.greylinks 15 000 руб.
+              .vertical-item
+                .item-media
+                  img(src='images/gallery/02.jpg', alt='')
+                .item-content
+                  h4 Инвертор SUN 1224
+                  p.item-meta.greylinks 15 000 руб.
+              .vertical-item
+                .item-media
+                  img(src='images/gallery/03.jpg', alt='')
+                .item-content
+                  h4 Инвертор SUN 1224
+                  p.item-meta.greylinks 15 000 руб.
+              .vertical-item
+                .item-media
+                  img(src='images/gallery/04.jpg', alt='')
+                .item-content
+                  h4 Consetetur sadipscing elitr
+                  p.item-meta.greylinks 15 000 руб.

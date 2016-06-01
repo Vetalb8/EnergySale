@@ -25,11 +25,18 @@ article.post + article.post {
 
 .post {
   &.vertical-item .item-content {
-    padding: 26px 38px 36px;
+    padding: 3px 18px 18px;
   }
   .side-item .item-content {
     padding: 36px 38px 36px 10px;
   }
+}
+
+.item-content_btn {
+  display: block;
+  border: 1px solid #f5bb2c;
+  cursor: pointer;
+  border-radius: 8px;
 }
 
 @media (max-width: 991px) {
