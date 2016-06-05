@@ -78,16 +78,13 @@ mixin news(imgSrc, title, text)
       .col-md-6
         .item-media
           img(src=imgSrc, alt='')
-          .media-links
       .col-md-6
         .item-content
-          h3.entry-title.topmargin_0
-            a(href='event-single-right.html')=title
+          h3.entry-title.topmargin_0=title
           a(href='')
           p.item-meta.greylinks
             i.rt-icon2-calendar4.highlight
             | Феварль 12, 2016,
             i.rt-icon2-location2.highlight
             | Ленина 56
-          p.text-news
-            a(href='#')=text
+          p.text-news=text
