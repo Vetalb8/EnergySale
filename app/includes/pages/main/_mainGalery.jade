@@ -1,0 +1,24 @@
+include ../../mixins/mixins
+section.ms.section_padding_50
+  .container-fluid
+    .row
+      .col-sm-12.text-center
+        p.big.grey Галлерея
+        h3.section_header.highlight Наши объекты
+    .row
+      .col-sm-12
+        .owl-carousel(data-margin='20', data-nav='true', data-items='6', data-themeclass='hover-scale')
+          +galary-item('images/events/01.jpg', '/object.html')
+          +galary-item('images/events/02.jpg', '/object.html')
+          +galary-item('images/events/03.jpg', '/object.html')
+          +galary-item('images/events/04.jpg', '/object.html')
+          +galary-item('images/events/05.jpg', '/object.html')
+          +galary-item('images/events/06.jpg', '/object.html')
+          +galary-item('images/events/07.jpg', '/object.html')
+          +galary-item('images/events/08.jpg', '/object.html')
+        // .owl-carousel
+      // .col-sm-12
+    // .row
+    .row
+      .col-sm-12.text-center
+        a.theme_button.inverse.wide_button(href='/objects.html') Перейти на страницу объектов
