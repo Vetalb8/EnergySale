@@ -1,0 +1,34 @@
+include ../../mixins/mixins
+section.ls.ms.section_padding_100.columns_padding_25
+  .container
+    .row
+      .col-sm-8
+        article.text-center
+          h1.entry-title
+            a(href='blog-single-right.html', rel='bookmark') Объект номер 1
+          header.entry-header
+            span.date
+              time.entry-date(datetime='2016-01-13T15:05:23+00:00')
+                | Jan 13, 2016
+            .categories-links
+              a.theme_button.small_button.color1(rel='category', href='blog-right.html') Категория 1
+          // .entry-header
+        .item-object__carousel
+          #gallery-owl-carousel.owl-carousel(data-dots='true', data-items='1', data-responsive-lg='1', data-responsive-md='1', data-responsive-sm='1', data-responsive-xs='1')
+            .entry-thumbnail.divider_40
+              img(src='images/gallery/01.jpg', alt='')
+            .entry-thumbnail.divider_40
+              img(src='images/gallery/02.jpg', alt='')
+            .entry-thumbnail.divider_40
+              img(src='images/gallery/03.jpg', alt='')
+        .entry-excerpt
+          p
+            | Namber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+        p
+          | Lorem ipsum dolor sit amet, consetetur sadipscinged diam nonumy eirmod tempor invidunt utlabore dolore magna aliquyam erat, sed diam voluptua. At vero eoet accusam esto clitakasd gubergren nea takimata sanctus est lorem ipsum.
+        // eof .col-sm-8 (main content)
+        // sidebar
+      aside.col-sm-4
+        include ../../components/_bestsellers
+      // eof aside sidebar
+

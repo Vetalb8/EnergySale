@@ -5,6 +5,13 @@
   .greylinks a:hover {
     color: #323232;
   }
+
+  .item-object__carousel {
+    .owl-dots {
+      margin-top: 0;
+    }
+  }
+
   .with_background, hr {
     background-color: #ffffff;
   }

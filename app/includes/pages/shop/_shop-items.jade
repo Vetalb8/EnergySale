@@ -156,13 +156,4 @@ section.ls.ms.section_padding_top_100.section_padding_bottom_75.columns_padding_
                   a(href='#') Next
       // eof .col-sm-8 (main content)
       .col-sm-5.col-md-4.col-lg-4
-        .with_background.with_padding.with_radius
-          .widget.widget_popular_entries
-            h3.widget-title Хиты продаж
-            ul.media-list.darklinks
-              +news-item('blog-single-right.html', 'images/recent_post1.jpg', 'blog-single-right.html', 'Солнечная панель', '2 400 руб.')
-              +news-item('blog-single-right.html', 'images/recent_post2.jpg', 'blog-single-right.html', 'Аккамулятор', '2 800 руб.')
-              +news-item('blog-single-right.html', 'images/recent_post1.jpg', 'blog-single-right.html', 'Ветрогенератор', '1 400 руб.')
-              +news-item('blog-single-right.html', 'images/recent_post2.jpg', 'blog-single-right.html', 'Контроллер', '5 450 руб.')
-              +news-item('blog-single-right.html', 'images/recent_post2.jpg', 'blog-single-right.html', 'Контроллер', '5 450 руб.')
-              +news-item('blog-single-right.html', 'images/recent_post2.jpg', 'blog-single-right.html', 'Контроллер', '5 450 руб.')
+        include ../../components/_bestsellers
