@@ -1,0 +1,19 @@
+include ../../mixins/mixins
+section.ls.ms.section_padding_top_100.section_padding_bottom_100.columns_padding_25
+  .container
+    .row
+      .col-sm-7.col-md-8.col-lg-8
+        .row
+          .col-sm-12.bottommargin_30
+            +news('images/gallery/08.jpg', 'Новость 1', 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam et dolore magna aliquyam erat.')
+          .col-sm-12.bottommargin_30
+            +news('images/gallery/05.jpg', 'Новость 2', 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam et dolore magna aliquyam erat.')
+          .col-sm-12.bottommargin_30
+            +news('images/gallery/03.jpg', 'Новость 3', 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam et dolore magna aliquyam erat.')
+        .row
+          .col-sm-12.text-center
+            include ../../components/_pagination
+      // eof .col-sm-8 (main content)
+      // sidebar
+      aside.col-sm-5.col-md-4.col-lg-4
+        include ../../components/_bestsellers
