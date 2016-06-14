@@ -1,24 +1,11 @@
 extends layouts/default
 
 block content
-  // search modal
-  #search_modal.modal(tabindex='-1', role='dialog', aria-labelledby='search_modal')
-    .widget.widget_search
-      form.searchform.form-inline(method='get', action='/')
-        .form-group
-          input#modal-search-input.form-control(type='text', value='', name='search', placeholder='Search keyword')
-        button.theme_button(type='submit') Search
-  // wrappers for visual page editor and boxed version of template
-  #canvas
-    #box_wrapper
-      // template sections
-      include includes/common/_navigation
-      include includes/common/_breadcrumbs
-      include includes/pages/shop/_shop-items
-      include includes/common/_contact-bg-white
-      include includes/common/_callus
-      include includes/common/_copyright
-    // eof #box_wrapper
-  // eof #canvas
-  .preloader
-    .preloader_image
+  // template sections
+  include includes/common/_navigation
+  include includes/common/_breadcrumbs
+  include includes/pages/shop/_shop-items
+  include includes/common/_contact-bg-white
+  include includes/common/_callus
+  include includes/common/_copyright
+

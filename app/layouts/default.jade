@@ -26,8 +26,21 @@ html.no-js
     | <!--[if lt IE 10]>
     |   <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     | <![endif]-->
-
-    block content
+    // search modal
+    #search_modal.modal(tabindex='-1', role='dialog', aria-labelledby='search_modal')
+      .widget.widget_search
+        form.searchform.form-inline(method='get', action='/')
+          .form-group
+            input#modal-search-input.form-control(type='text', value='', name='search', placeholder='Search keyword')
+          button.theme_button(type='submit') Search
+    // wrappers for visual page editor and boxed version of template
+    #canvas
+      #box_wrapper
+        block content
+      // eof #box_wrapper
+    // eof #canvas
+    .preloader
+      .preloader_image
 
     // Google Analytics: change UA-XXXXX-X to be your site's ID.
     script.
