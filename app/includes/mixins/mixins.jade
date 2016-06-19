@@ -26,14 +26,14 @@ mixin services-item(imgSrc, imgAlt, title, linkText)
       .item-content__link
         a.services-link(href='/category.html') Перейти
 
-mixin news-item(linkMediaHref, imgSrc, titleHref, title, price)
-  li.media
-    a.media-left(href=linkMediaHref)
-      img.media-object(src=imgSrc, alt='')
-    .media-body
-      p
-        a(href=titleHref)=title
-      span=price
+mixin news-item(imgSrc, title, price)
+  .vertical-item
+    .item-media
+      img(src=imgSrc, alt='')
+    .item-content
+      p.item-meta
+        span.news-item__title=title
+        span.pull-right.news-item__price=price
 
 mixin default-tab-item(imgSrc, title, text)
   .vertical-item.content-absolute.square_teaser
@@ -49,7 +49,7 @@ mixin tab-item1(imgSrc, title, text)
       .item-media
         img(src=imgSrc)
         .media-links
-          a.abs-lin(href='#')
+          a.abs-link(href='#')
       .item-content
         h3.entry-title
           a(href='item.html')=title
@@ -78,13 +78,13 @@ mixin news(imgSrc, title, text)
       .col-md-6
         .item-media
           img(src=imgSrc, alt='')
+          .media-links
+            a.abs-link(href='newsItem.html')
       .col-md-6
         .item-content
-          h3.entry-title.topmargin_0=title
-          a(href='')
+          h2.entry-title.topmargin_0
+            a(href='newsItem.html')=title
           p.item-meta.greylinks
             i.rt-icon2-calendar4.highlight
-            | Феварль 12, 2016,
-            i.rt-icon2-location2.highlight
-            | Ленина 56
-          p.text-news=text
+            | Феварль 12, 2016
+          a(href='newsItem.html').text-news=text

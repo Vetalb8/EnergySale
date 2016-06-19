@@ -3,10 +3,10 @@
 $icon-font-path: '../fonts/';
 
 // bower:scss
-@import 'bower_components/bootstrap-sass/assets/stylesheets/_bootstrap';
+@import '../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
 // endbower
 
-@import 'includes/fonts.scss';
+@import 'includes/fonts';
 
 @import 'includes/boot-overrides';
 @import 'includes/breadcrumbs';
@@ -86,4 +86,5 @@ $icon-font-path: '../fonts/';
 @import 'includes/plugins';
 @import 'includes/corporate-background-colors';
 @import 'includes/corporate-colors';
+@import 'includes/category-description';
 

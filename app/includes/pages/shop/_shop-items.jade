@@ -2,7 +2,7 @@ include ../../mixins/mixins
 section.ls.ms.section_padding_top_100.section_padding_bottom_75.columns_padding_25
   .container
     .row
-      .col-sm-7.col-md-8.col-lg-8
+      .col-sm-12.col-md-12.col-lg-12
         .storefront-sorting.muted_background.bottommargin_60.clearfix
           form.form-inline
             .form-group
@@ -12,10 +12,6 @@ section.ls.ms.section_padding_top_100.section_padding_bottom_75.columns_padding_
                 option(value='date') Новизне
                 option(value='price') Снизу вверх
                 option(value='price-desc') Сверху вниз
-            .form-group
-              a#sort_view(href='#')
-                i.arrow-icon-up-small
-              a#toggle_shop_view(href='#')
             .form-group.pull-right
               label.grey(for='showcount') Показывать:
               select#showcount.form-control.showcount(name='showcount')
@@ -25,6 +21,8 @@ section.ls.ms.section_padding_top_100.section_padding_bottom_75.columns_padding_
                 option(value='20') 20
                 option(value='24') 24
                 option(value='28') 28
+    .row
+      .col-sm-6.col-md-6.col-lg-6
         .columns-2
           ul#products.products.list-unstyled.grid-view
             li.product.type-product
@@ -113,7 +111,116 @@ section.ls.ms.section_padding_top_100.section_padding_bottom_75.columns_padding_
                     .item-media
                       a(href='item.html')
                         img(src='images/shop/02.jpg', alt='')
+                        span.onsale Распродажа!
+                      .product-buttons
+                        a.add_to_cart_button(href='#', rel='nofollow')
+                          i.rt-icon2-basket
+                    h3
+                      a(href='product-right.html') Солнечная батарея А150
+                  .col-md-6
+                    .item-content
+                      h4 Описание продукта
+                      p.product-description
+                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo odit, expedita est aspernatur accusamus sit dolorem et illo distinctio corporis, neque, error ipsa, eum? Suscipit fugiat totam voluptatum necessitatibus ex.
+                      h4 Рейтинг
+                      .star-rating(title='Rated 2.50 out of 5')
+                        span(style='width:50%')
+                          strong.rating 2.50
+                          |  out of 5
+                      span.price
+                        del
+                          span.amount 2 000 руб.
+                        ins
+                          span.amount 1 000 руб.
+      .col-sm-6.col-md-6.col-lg-6
+        .columns-2
+          ul#products2.products.list-unstyled.grid-view
+            li.product.type-product
+              .side-item
+                .row
+                  .col-md-6
+                    .item-media
+                      a(href='item.html')
+                        img(src='images/shop/02.jpg', alt='')
                         span.newproduct Новое
+                      .product-buttons
+                        a.add_to_cart_button(href='#', rel='nofollow')
+                          i.rt-icon2-basket
+                    h3
+                      a(href='product-right.html') Солнечная батарея А150
+                  .col-md-6
+                    .item-content
+                      h4 Описание продукта
+                      p.product-description
+                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo odit, expedita est aspernatur accusamus sit dolorem et illo distinctio corporis, neque, error ipsa, eum? Suscipit fugiat totam voluptatum necessitatibus ex.
+                      h4 Рейтинг
+                      .star-rating(title='Rated 4.00 out of 5')
+                        span(style='width:80%')
+                          strong.rating 4.00
+                          |  out of 5
+                      span.price
+                        span
+                          span.amount 1 000 руб.
+            li.product.type-product
+              .side-item
+                .row
+                  .col-md-6
+                    .item-media
+                      a(href='item.html')
+                        img(src='images/shop/02.jpg', alt='')
+                        span.onsale Распродажа!
+                      .product-buttons
+                        a.add_to_cart_button(href='#', rel='nofollow')
+                          i.rt-icon2-basket
+                    h3
+                      a(href='product-right.html') Солнечная батарея А150
+                  .col-md-6
+                    .item-content
+                      h4 Описание продукта
+                      p.product-description
+                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo odit, expedita est aspernatur accusamus sit dolorem et illo distinctio corporis, neque, error ipsa, eum? Suscipit fugiat totam voluptatum necessitatibus ex.
+                      h4 Рейтинг
+                      .star-rating(title='Rated 3.50 out of 5')
+                        span(style='width:70%')
+                          strong.rating 3.50
+                          |  out of 5
+                      span.price
+                        del
+                          span.amount 3 000 руб.
+                        ins
+                          span.amount 2 000 руб.
+            li.product.type-product
+              .side-item
+                .row
+                  .col-md-6
+                    .item-media
+                      a(href='item.html')
+                        img(src='images/shop/02.jpg', alt='')
+                      .product-buttons
+                        a.add_to_cart_button(href='#', rel='nofollow')
+                          i.rt-icon2-basket
+                    h3
+                      a(href='product-right.html') Солнечная батарея А150
+                  .col-md-6
+                    .item-content
+                      h4 Описание продукта
+                      p.product-description
+                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo odit, expedita est aspernatur accusamus sit dolorem et illo distinctio corporis, neque, error ipsa, eum? Suscipit fugiat totam voluptatum necessitatibus ex.
+                      h4 Рейтинг
+                      .star-rating(title='Rated 5.00 out of 5')
+                        span(style='width:100%')
+                          strong.rating 5.00
+                          |  out of 5
+                      span.price
+                        span
+                          span.amount 1 500 руб.
+            li.product.type-product
+              .side-item
+                .row
+                  .col-md-6
+                    .item-media
+                      a(href='item.html')
+                        img(src='images/shop/02.jpg', alt='')
                         span.onsale Распродажа!
                       .product-buttons
                         a.add_to_cart_button(href='#', rel='nofollow')
@@ -136,24 +243,7 @@ section.ls.ms.section_padding_top_100.section_padding_bottom_75.columns_padding_
                         ins
                           span.amount 1 000 руб.
         // eof .columns-*
-        .row
-          .col-sm-12.text-center
-            .muted_background
-              ul.pagination
-                li
-                  a(href='#') Prev
-                li.active
-                  a(href='#') 1
-                li
-                  a(href='#') 2
-                li
-                  a(href='#') 3
-                li
-                  a(href='#') 4
-                li
-                  a(href='#') 5
-                li
-                  a(href='#') Next
+      .row
+        .col-sm-12.text-center
+          include ../../components/_pagination
       // eof .col-sm-8 (main content)
-      .col-sm-5.col-md-4.col-lg-4
-        include ../../components/_bestsellers
