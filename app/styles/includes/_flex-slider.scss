@@ -1,6 +1,8 @@
 /* flexslider */
 
 .intro_section {
+  max-width: 1165px;
+  margin: 0 auto;
   position: relative;
   overflow: hidden;
   > img {
@@ -34,7 +36,7 @@
     top: 0;
     bottom: 0;
     right: 0;
-    left: 0;
+    left: 42px;
     height: 100%;
     z-index: 5;
     padding: 55px 0 20px;
